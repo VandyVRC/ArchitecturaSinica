@@ -1,0 +1,82 @@
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <config>
+        <!-- App title -->
+        <title>Architectura Sinica</title>
+        <!-- App description -->
+        <description>A digital image archive of the monumental architecture of pre-modern China. </description>
+        <!-- Contact email -->
+        <contact/>
+        <!--  Logo name (assumes path to logo is $app-root/resources/img/) -->
+        <logo/>
+        <!-- Web Site URL -->
+        <url>https://architecturasinica.org/</url>
+        <!-- Root of app for building dynamic links. Default is eXist app root -->
+        <nav-base></nav-base>
+        <!-- eXist app root for app deployment-->
+        <app-root>tcadrt</app-root>
+        <!-- eXist data app root for gazetteer data -->
+        <data-root>tcadrt-data</data-root>
+        <!-- Base URI for identifiers in app data -->
+        <base_uri>https://architecturasinica.org</base_uri>
+        <!-- Absolute (from app root) Path to ODD file used for translating controlled values. May be left blank. -->
+        <odd>/documentation/syriaca-tei-main.odd</odd>
+        <!-- xpath to unique identifier for record, syriaca.org uses tei:idno[@type='URL'], this is the default value -->
+        <document-ids type="URI">tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type='URL']</document-ids>
+        <!--<html-render type="xquery"></html-render>-->
+        <html-render type="xslt"/>
+        <!-- Map rendering -->
+        <maps>
+            <!--  <option selected="true" api-key="API_KEY_HERE">google</option> -->
+            <option>google</option>
+            <option selected="true" api-key="pk.eyJ1Ijoid3NhbGVza3kiLCJhIjoiY2tpc3dxOXJ5MGx0MjMycnhzMjM0dmZ4aCJ9.iCuGKHojqVUlaMuJObEz-w">leaflet</option>
+        </maps>
+        <!-- Keyboard options 
+        <keyboard-options>
+            <option id="chinese">Chinese</option>
+            <option id="qwerty">English QWERTY</option>
+        </keyboard-options>
+        -->
+        <zotero group="2267085"/>
+        <collections>
+            <!--<collection name="Short-name used in html pages to reference collection, module name" 
+                series="Series name used in TEI biblScope @depreciated, use collection-URI" 
+                collection-URI="Series id used in TEI biblScope. Only needed for subcollection filtering"
+                record-URI-pattern="URI for building links to record views."
+                app-root="folder name in app" 
+                data-root="folder name in data"/>-->
+            
+            <collection template="page" name="places" app-root="/geo/" data-root="places" record-URI-pattern="https://architecturasinica.org/place/"/>
+            <collection template="page" name="keywords" title="Architectural Features" app-root="/keyword/" data-root="keywords" record-URI-pattern="https://architecturasinica.org/keyword/"/>
+            <collection template="page" name="bibl" title="Bibliography" app-root="/bibl/" data-root="bibl" record-URI-pattern="https://architecturasinica.org/bibl/"/>
+            <collection template="page" name="sites" app-root="/geo/" data-root="places/sites" record-URI-pattern="https://architecturasinica.org/place/"/>
+            <collection template="page" name="buildings" app-root="/geo/" data-root="places/buildings" record-URI-pattern="https://architecturasinica.org/place/"/>
+            <collection template="page" name="images" app-root="/images/" data-root="images" record-URI-pattern="https://architecturasinica.org/image/"/>
+        </collections>
+        <searchFields>
+            <!-- Needed fields -->
+            <fields function="fullText">fullText</fields>
+            <fields function="title" boost="10">title</fields>
+            <fields function="displayTitleEnglish">displayTitleEnglish</fields>
+            <fields function="placeName">placeName</fields>
+            <fields function="feature">feature</fields>
+            <fields function="featureNum">featureNum</fields>
+            <fields function="dynasty">dynasty</fields>
+            <fields function="province">province</fields>
+<!--            <fields function="timePeriod">timePeriod</fields>-->
+            <fields function="type">type</fields>
+<!--            <fields function="roadsBridges">roadsBridges</fields>-->
+            <fields function="category">category</fields>
+            
+            <!-- Bibliography -->
+            <fields function="author">author</fields>
+            <fields function="pubPlace">pubPlace</fields>
+            <fields function="publisher">publisher</fields>
+            <fields function="pubDate">pubDate</fields>
+            
+        </searchFields>
+        <google_analytics>var _gaq=[['_setAccount',''],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));</google_analytics>
+    </config>
+</meta>

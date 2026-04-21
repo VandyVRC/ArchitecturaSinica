@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srophe="https://srophe.app">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      
+      <title data-template="config:app-title">App Title</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+      <meta data-template="config:app-meta" />
+      
+      <link rel="shortcut icon" href="/resources/images/fav-icons/favicon.ico" />
+      
+      <!-- Bootstrap 3 -->
+      
+      <link rel="stylesheet" type="text/css" href="/resources/bootstrap/css/bootstrap.min.css" />
+      
+      <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css" />
+      
+      <!-- Srophe styles -->
+      
+      <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css" />
+      
+      <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
+      
+      <link rel="stylesheet" type="text/css" href="/resources/css/arch-sinica-main.css" />
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" />
+      
+      <link rel="stylesheet" type="text/css" media="print" href="/resources/css/print.css" />
+      
+      <!-- Leaflet -->
+      
+      <link rel="stylesheet" href="/resources/leaflet/leaflet.css" />
+      
+      <link rel="stylesheet" href="/resources/leaflet/leaflet.awesome-markers.css" />
+      
+      <!-- Date Slider -->
+      
+      <link rel="stylesheet" type="text/css" href="/resources/dateSlider/css/slider.css" />
+      
+      <link rel="stylesheet" type="text/css" href="/resources/dateSlider/css/slider-classic-min.css" />
+      
+      <!-- JQuery -->
+      
+      <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+      <script type="text/javascript" src="/resources/js/jquery.min.js"></script>
+      <script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"></script>
+      <script type="text/javascript" src="/resources/js/clipboard.min.js"></script>
+      
+      <!-- Bootstrap -->
+      <script type="text/javascript" src="/resources/bootstrap/js/bootstrap.min.js"></script>
+      
+      <!-- Date Slider -->
+      <script src="/resources/dateSlider/js/jQDateRangeSlider-min.js"></script>
+      <script defer="defer" data-domain="architecturasinica.org" src="https://plausible.io/js/script.js"></script>
+      
+      <!--<script src="https://www.google.com/recaptcha/api.js" type="text/javascript" async="async" defer="defer"/>-->
+      <script type="text/javascript">
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip({ container: 'body' })
+            })
+        </script>
+      </head>
+   <body id="body">
+      <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+         
+         <div>
+            
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+               <a class="navbar-brand banner-container" href="/index.html">
+                  <span>Architectura Sinica</span>
+                  </a>
+               
+            </div>
+            
+            <div class="navbar-collapse collapse pull-right">
+               
+               <ul class="nav navbar-nav sm sm-vertical" id="main-menu">
+                  
+                  <li>
+                     <a href="/research-tool.html"> DYNAMIC SITE ARCHIVE </a>
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="/terminology.html"> ARCHITECTURAL TERMINOLOGY </a>
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="/bibliography.html"> BIBLIOGRAPHY </a>
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="/about.html"> ABOUT </a>
+                     
+                  </li>
+                  
+               </ul>
+               
+               <form class="navbar-form navbar-left navbar-input-group" role="search" action="/search.html" method="get">
+                  
+                  <div class="input-group">
+                     <input type="text" class="form-control keyboard" placeholder="search" name="q" id="q" />
+                     
+                     <div class="input-group-btn">
+                        
+                     </div>
+                     <!-- /btn-group -->
+                     
+                  </div>
+                  <button type="submit" class="btn btn-default">
+                     <span class="glyphicon glyphicon-search"></span>
+                     </button>
+                  
+               </form>
+               
+            </div>
+            <!--/.nav-collapse -->
+            
+         </div>
+         
+      </div>
+      <div xmlns:xi="http://www.w3.org/2001/XInclude" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+         
+         <div class="row top-padding">
+            
+            <div class="container">
+               
+               <div class="indent">
+                  
+                  <div>
+                     <img id="arch-sinic-about" src="resources/images/LongmenDaxiong1.jpg" height="475px" />
+                     
+                     <h2>Architectura Sinica</h2>
+                     
+                     <p>Currently in active development, Architectura Sinica is designed to be a be a public,
+                        browser-based research portal for the study of China's traditional architecture. 
+                     </p>
+                     
+                     <p>When complete the site will consist of four parts, each intended to support further
+                        research, and to be enriched by the contributions of others:
+                     </p>
+                     
+                     <ol>
+                        
+                        <li>A Dynamic Site Archive of historic monuments, both larger sites and individual structures,
+                           searchable by name of site (ancient and modern) and by technical terminology used
+                           to describe individual elements of single buildings. Search terms will be in Chinese,
+                           pinyin Romanization of modern Mandarin, and English translation. The archive will
+                           be fully integrated with a mapping tool that will allow search results to be located
+                           on a map of modern China using public-domain base maps. This will be linked to the
+                           photo archive to facilitate viewing of search results through the map interface. Map
+                           output will be available in digital and analog forms for peer-reviewed publication.
+                        </li>
+                        
+                        <li>A encyclopedic dictionary and thesaurus of technical terminology used to describe
+                           Traditional Chinese Architecture. Most entries are the product of the ATTCAT (The
+                           Annotation and Translation of Traditional Chinese Architectural Terminology) Project,
+                           an international team of students and scholars who meet annually to research individual
+                           terms related to Traditional Chinese Architecture and collate previous translations.
+                           ATTCAT workshops are led by Chen Wei 陳薇, Zhuge Jing 諸葛净, Zuo Lala 左拉拉, and Tracy Miller
+                           梅晨曦, and are generously sponsored by Southeast University School of Architecture in
+                           Nanjing 南京東南大學建築學院 and, since 2021, NYU Shanghai. For a full list of individual participants,
+                           please follow links for the appropriate year: <a href="contributorsATTCAT2018.html">2018</a>; <a href="contributorsATTCAT2019.html">2019</a>; <a href="contributorsATTCAT2021.html">2021</a>; <a href="contributorsATTCAT2022.html">2022</a>; <a href="contributorsATTCAT2023.html" title="contributorsATTCAT2023">2023</a>; <a href="contributorsATTCAT2024.html" title="contributorsATTCAT2024">2024</a>. Beginning in the Spring of 2021, entries were also created by the Chinese Monuments
+                           Workshop, a collaboration of faculty, masters students, and undergraduates at NYU
+                           Shanghai, Southeast University, and Vanderbilt University. More on the 2021 workshop
+                           can be found following this <a href="contributorsCMW21.html">link</a>.
+                        </li> 
+                        
+                        <li>A bibliography of sources on Traditional Chinese Architecture. The focus of this bibliography
+                           will be sources used in individual entries, but additional sources on the history
+                           and development of the architectural tradition of China will also be included. Contributions
+                           to this bibliography are welcome! If you would like to contribute a source, please
+                           contact <a href="mailto:tracy.g.miller@vanderbilt.edu">Tracy Miller.</a>
+                           
+                        </li>
+                        
+                        <li>Photographs and transcriptions of epigraphic information found at a given site. When
+                           complete, titles and authors of stele inscriptions will be searchable using traditional
+                           Chinese characters.
+                        </li>
+                        
+                     </ol>
+                     
+                  </div>
+                  
+               </div>
+               
+            </div>
+            
+            <div class="container">
+               
+               <hr />
+               
+               <h3>The <em>Architectura Sinica</em> project was made possible by these institutions and sponsors:
+               </h3>
+               
+               <hr />
+               
+               <ul class="list-inline funding sponsors">
+                  
+                  <li>
+                     <a href="https://www.neh.gov/" class="logo" target="_blank">
+                        <img src="/resources/images/neh-logo.png" height="75px" />
+                        </a>
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="https://mellon.org/" class="logo" target="_blank">
+                        <img src="/resources/images/mellon-logo.png" height="75px" />
+                        </a>                    
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="http://www.grahamfoundation.org/" class="logo" target="_blank">
+                        <img src="/resources/images/gf-logo.png" height="75px" />
+                        </a>                    
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="https://as.vanderbilt.edu/" class="logo" target="_blank">
+                        <img src="/resources/images/AandSLogo.jpg" height="70px" />
+                        </a>                    
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="https://as.vanderbilt.edu/historyart/" class="logo" target="_blank">
+                        <img src="/resources/images/HARTlogoNew.jpg" height="70px" />
+                        </a>                    
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="http://www.library.vanderbilt.edu/" class="logo" target="_blank">
+                        <img src="/resources/images/heard-library-logo.png" height="70px" />
+                        </a>                    
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="http://www.seu.edu.cn/" class="logo" target="_blank">
+                        <img src="/resources/images/SEUlogo1.png" height="100px" />
+                        </a>                    
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="http://arch.seu.edu.cn/" class="logo" target="_blank">
+                        <img src="/resources/images/seuarch-logo.png" height="115px" />
+                        </a>                    
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="https://shanghai.nyu.edu/" class="logo" target="_blank">
+                        <img src="/resources/images/NYUShanghai.jpeg" height="115px" />
+                        </a>                    
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="https://shanghai.nyu.edu/" class="logo" target="_blank">
+                        <img src="/resources/images/NYUShanghaiDHL2.jpg" height="115px" />
+                        </a>                   
+                     
+                  </li>
+                  
+                  <li>
+                     <a href="https://www.songyuan.org/" class="logo" target="_blank">
+                        <img src="/resources/images/ssycds_logo.jpg" height="70px" />
+                        </a>                    
+                     
+                  </li>
+                  
+               </ul>
+               
+            </div>
+            
+         </div>
+         
+         
+      </div>
+      <!-- Footer with Syriaca.org branding -->
+      <footer>
+         <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
+            <img alt="Creative Commons License" style="border-width:0" src="/resources/images/cc.png" height="18px" />
+            </a> 
+         This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" target="_blank">Creative Commons Attribution 3.0 Unported License</a>.
+         <br />Copyright Vanderbilt University and the Contributor(s), 2014.  
+         
+      </footer>
+   </body><script type="text/javascript" src="/resources/js/jquery.validate.min.js"></script><script type="text/javascript" src="/resources/js/srophe.js"></script><script data-template="app:google-analytics"></script></html>
