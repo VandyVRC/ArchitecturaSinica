@@ -133,11 +133,11 @@
          
          <div class="padding-top">   
             
-            <div data-template="search:search-data" data-template-collection="keywords" data-template-sort-element="title">
+            <div data-template="search:search-data" data-template-collection="bibl" data-template-sort-element="author">
                
-               <form method="get" action="terminology.html" class="center-block form-horizontal indent" role="form" style="margin:0; padding:2em 1em; background-color:#F7F7F9;">  
+               <form method="get" action="bibliography.html" class="center-block form-horizontal indent" role="form" style="margin:0; padding:2em 1em; background-color:#F7F7F9;">  
                   
-                  <h1 class="search-header indent">Thesaurus of Architectural Terminology 
+                  <h1 class="search-header indent">Architectura Sinica Bibliography
                       <small class="pull-right" style="margin-right:2em;">
                         (<a class="togglelink text-info" data-toggle="collapse" data-target="#showSearch" href="#showSearch" data-text-swap="+ Show"> - Hide </a>)
                         </small>
@@ -161,19 +161,67 @@
                            
                         </div>
                         
-                        <!-- Place Name-->
-                        
-                        <div class="form-group">
-                           <label for="term" class="col-sm-2 col-md-3  control-label">Architectural Feature: 
-                              <span class="glyphicon glyphicon-question-sign text-info moreInfo" aria-hidden="true" data-toggle="tooltip" title="Restrict search to architectural feature names, includes English, Pinyin and Chinese."></span>
-                              </label>
+                        <div class="form-group">            
+                           <label for="title" class="col-sm-2 col-md-3  control-label">Title: </label>
                            
-                           <div class="col-sm-10 col-md-9 ">   
-                              <input type="text" id="term" name="term" class="form-control keyboard" />
+                           <div class="col-sm-10 col-md-9 ">
+                              <input type="text" id="title" name="title" class="form-control keyboard" placeholder="Title of article, journal, book, or series" />                 
                               
                            </div>
                            
                         </div>
+                        
+                        <div class="form-group">            
+                           <label for="author" class="col-sm-2 col-md-3  control-label">Author/Editor: </label>
+                           
+                           <div class="col-sm-10 col-md-9">
+                              <input type="text" id="author" name="author" class="form-control keyboard" placeholder="First Last or Last, First" />                
+                              
+                           </div>
+                           
+                        </div>  
+                        
+                        <div class="form-group">            
+                           <label for="pub-place" class="col-sm-2 col-md-3  control-label">Publication Place: </label>
+                           
+                           <div class="col-sm-10 col-md-9">
+                              <input type="text" id="pubPlace" name="pub-place" class="form-control keyboard" placeholder="First Last or Last, First" />
+                              
+                           </div>
+                           
+                        </div>
+                        
+                        <div class="form-group">            
+                           <label for="publisher" class="col-sm-2 col-md-3  control-label">Publisher: </label>
+                           
+                           <div class="col-sm-10 col-md-9">
+                              <input type="text" id="publisher" name="publisher" class="form-control keyboard" placeholder="Publisher Name" />
+                              
+                           </div>
+                           
+                        </div>   
+                        
+                        <div class="form-group">            
+                           <label for="date" class="col-sm-2 col-md-3  control-label">Date: </label>
+                           
+                           <div class="col-sm-10 col-md-9">
+                              <input type="text" id="date" name="date" class="form-control" placeholder="Year as YYYY" />
+                              
+                           </div>
+                           
+                        </div>   
+                        
+                        <hr />
+                        
+                        <div class="form-group">            
+                           <label for="idno" class="col-sm-2 col-md-3  control-label">Id Number: </label>
+                           
+                           <div class="col-sm-10 col-md-2 ">
+                              <input type="text" id="idno" name="idno" class="form-control" placeholder="Ex: 3490" />
+                              
+                           </div>
+                           
+                        </div> 
                         <i id="searchSpinner" class="fa fa-spinner fa-spin fa-lg"></i>
                         
                         <div class="pull-right">
@@ -191,30 +239,27 @@
                
                <div id="search-results-panel">
                   
-                  <div data-template="app:pageination" data-template-search-string="yes" data-template-collection="keywords" data-template-sort-options="relevance,title"></div>
+                  <div data-template="app:pageination" data-template-search-string="yes" data-template-collection="bibl" data-template-sort-options="relevance,title,author,pubPlace,pubDate "></div>
                   
                   <div class="row">
                      
-                     <div class="col-md-4">
-                        
-                        <!--
+                     <!-- Commented out until Tracy asks for facets or slider
+                <div class="col-md-4">
                     <div class="slider-container">
                         <div id="slider" data-template="app:display-slider"/>
                     </div>
-                    -->
-                        
-                        <div data-template="app:display-facets" data-template-collection="keywords" data-template-facets="facet-def.xml"></div>
-                        
-                     </div>
+                    <div data-template="app:display-facets" data-template-collection="bibl" data-template-facets="facet-def.xml"/>
+                </div>
+                -->
                      
-                     <div class="col-md-8">
+                     <div class="col-md-12">
                         <br />
                         
-                        <div data-template="search:show-hits" data-template-collection="keywords"></div>
+                        <div data-template="search:show-hits" data-template-collection="bibl"></div>
                         
                         <div class="page-bottom">
                            
-                           <div data-template="app:pageination" data-template-collection="keywords"></div>
+                           <div data-template="app:pageination" data-template-collection="bibl"></div>
                            
                         </div>
                         
@@ -238,6 +283,4 @@
          <br />Copyright Vanderbilt University and the Contributor(s), 2014.  
          
       </footer>
-   </body>
-   <script type="text/javascript" src="/resources/js/terminology-search.js"></script>
-   <script type="text/javascript" src="/resources/js/jquery.validate.min.js"></script><script type="text/javascript" src="/resources/js/srophe.js"></script><script data-template="app:google-analytics"></script></html>
+   </body><script type="text/javascript" src="/resources/js/jquery.validate.min.js"></script><script type="text/javascript" src="/resources/js/srophe.js"></script><script data-template="app:google-analytics"></script></html>
