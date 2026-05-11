@@ -112,7 +112,7 @@ jobs:
           ' _ {}
 
       # 9. Upload HTML and XML (data/tei/) to S3 via sync (recommended)
-      - name: Upload HTML and data/tei XML to S3 using aws s3 sync
+      - name: Upload HTML and data/ XML to S3 using aws s3 sync
         env:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_S3_BUCKET: ${{ secrets.AWS_S3 }}
@@ -122,15 +122,15 @@ jobs:
             --exclude "*" --include "*.html" \
             --exact-timestamps || echo "s3 sync completed (or no files)"
 
-          # Sync TEI XMLs to s3://.../data/tei/ (source is data repo)
-          aws s3 sync tcadrt/data/tei/articles/tei/ s3://${AWS_S3_BUCKET}/data/tei/ \
-            --exclude "*" --include "*.xml" || echo "s3 sync data completed"
+          # Sync TEI XMLs to s3://.../data/ (source is data repo)
+          aws s3 sync tcadrt/data/bibl/tei/ s3://${AWS_S3_BUCKET}/bibl/ \
+            --exclude "*" --include "*.xml" || echo "s3 sync bibl data completed"
 
           # quick counts for logs
           echo "HTML files uploaded:"
           aws s3 ls s3://${AWS_S3_BUCKET}/ --recursive | grep -c '\.html$' || true
-          echo "XML files uploaded (data/tei/articles/tei):"
-          aws s3 ls s3://${AWS_S3_BUCKET}/data/tei/articles/tei/ --recursive | grep -c '\.xml$' || true
+          echo "XML files uploaded (data/bibl/tei):"
+          aws s3 ls s3://${AWS_S3_BUCKET}/bibl/ --recursive | grep -c '\.xml$' || true
 
       # 10. Make site changes visible for testers 
 
