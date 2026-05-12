@@ -11,6 +11,9 @@
       "ang-hsing shua-t`ou",
       "slanted bracket arm-shaped shuatou (ATTCAT preferred translation)"
     ],
+    "pinyin": "ángxíng shuǎtóu",
+    "chineseTraditional": "昂形耍頭",
+    "chineseSimplified": "昂形耍头",
     "type": "architectural feature",
     "architecturalFeature": [
       "slanted bracket arm-shaped shuatou (ATTCAT preferred translation)"
@@ -96,6 +99,9 @@
       "kuan",
       "belvedere (ATTCAT preferred)"
     ],
+    "pinyin": "guàn",
+    "chineseTraditional": "觀",
+    "chineseSimplified": "观",
     "type": "site type",
     "siteType": [
       "belvedere (ATTCAT preferred)"
@@ -124,6 +130,9 @@
       "mo-chiao-ling-kung",
       "beveled linggong"
     ],
+    "pinyin": "mòjiǎo lìnggǒng",
+    "chineseTraditional": "抹角令栱",
+    "chineseSimplified": "抹角令栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "beveled linggong"
@@ -151,6 +160,9 @@
       "Decorative coatings",
       "Decorative polychrome paintings of Architectural Members"
     ],
+    "pinyin": "cǎihuà",
+    "chineseTraditional": "彩畫",
+    "chineseSimplified": "彩画",
     "type": "architectural feature",
     "architecturalFeature": [
       "Polychrome painting (lit.)"
@@ -212,6 +224,9 @@
       "troughs (lit.)",
       "footing"
     ],
+    "pinyin": "cáo",
+    "chineseTraditional": "槽",
+    "chineseSimplified": "槽",
     "type": "architectural feature",
     "architecturalFeature": [
       "troughs (lit.)"
@@ -261,6 +276,9 @@
       "ts`e-chiao",
       "batter or inward incline of eaves columns"
     ],
+    "pinyin": "cèjiǎo",
+    "chineseTraditional": "側腳",
+    "chineseSimplified": "侧脚",
     "type": "architectural feature",
     "architecturalFeature": [
       "batter or inward incline of eaves columns"
@@ -279,6 +297,9 @@
       "ling-kung-yu-chüan-sha",
       "chamfered linggong: linggong curved along the elbow with straight cuts instead of an arc"
     ],
+    "pinyin": "lìnggǒng yǒujuànshā",
+    "chineseTraditional": "令栱有卷殺",
+    "chineseSimplified": "令栱有卷殺",
     "type": "architectural feature",
     "architecturalFeature": [
       "chamfered linggong: linggong curved along the elbow with straight cuts instead of an arc"
@@ -299,6 +320,9 @@
       "陳朝",
       "Chen Dynasty"
     ],
+    "pinyin": "Chén",
+    "chineseTraditional": "陳",
+    "chineseSimplified": "陈",
     "type": "time period",
     "timePeriod": [
       "Chen"
@@ -318,6 +342,9 @@
       "owl's tails; hawk's tails (lit.)",
       "sea beasts"
     ],
+    "pinyin": "chīwěi",
+    "chineseTraditional": "鴟尾",
+    "chineseSimplified": "鴟尾",
     "type": "architectural feature",
     "architecturalFeature": [
       "owl's tails; hawk's tails (lit.)"
@@ -393,6 +420,9 @@
       "楚國",
       "Chu Kingdom"
     ],
+    "pinyin": "Chǔ",
+    "chineseTraditional": "楚",
+    "chineseSimplified": "楚",
     "type": "time period",
     "timePeriod": [
       "Chu"
@@ -414,6 +444,9 @@
       "column-and-tie-beam frameworks",
       "post-and-tie constructions"
     ],
+    "pinyin": "chuāndòu",
+    "chineseTraditional": "穿鬥",
+    "chineseSimplified": "穿斗",
     "type": "architectural feature",
     "architecturalFeature": [
       "penetrating and interlocking (lit.)"
@@ -444,6 +477,9 @@
       "cloister",
       "courtyard"
     ],
+    "pinyin": "yuàn",
+    "chineseTraditional": "院",
+    "chineseSimplified": "院",
     "type": "site type",
     "siteType": [
       "compound"
@@ -468,6 +504,9 @@
       "corbels",
       "layered bracket sets"
     ],
+    "pinyin": "pūzuò",
+    "chineseTraditional": "鋪作",
+    "chineseSimplified": "铺作",
     "type": "architectural feature",
     "architecturalFeature": [
       "layering work (lit.)"
@@ -595,6 +634,9 @@
       "zhuǎnjiǎo pūzuò xiégǒng",
       "angled bracket arm on corner column"
     ],
+    "pinyin": "mòjiǎogǒng",
+    "chineseTraditional": "抹角栱",
+    "chineseSimplified": "抹角栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "corner-crossing bracket arm"
@@ -614,6 +656,9 @@
       "chu-t`ou-p`u-tso-hsieh-kung",
       "column top angled bracket arm"
     ],
+    "pinyin": "zhùtóu pūzuò xiégǒng",
+    "chineseTraditional": "柱頭鋪作斜栱",
+    "chineseSimplified": "柱头铺作斜栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "column top angled bracket arm"
@@ -635,6 +680,9 @@
       "parapets",
       "merlons"
     ],
+    "pinyin": "dié",
+    "chineseTraditional": "堞",
+    "chineseSimplified": "堞",
     "type": "architectural feature",
     "architecturalFeature": [
       "battlements (lit.)"
@@ -740,6 +788,9 @@
       "\"丁\" cross beams (lit.)",
       "T-beams (ATTCAT preferred)"
     ],
+    "pinyin": "dīngfú",
+    "chineseTraditional": "丁栿",
+    "chineseSimplified": "丁栿",
     "type": "architectural feature",
     "architecturalFeature": [
       "\"丁\" cross beams (lit.)"
@@ -950,6 +1001,9 @@
       "sites",
       "structure layouts"
     ],
+    "pinyin": "dìpán",
+    "chineseTraditional": "地盤",
+    "chineseSimplified": "地盘",
     "type": "architectural feature",
     "architecturalFeature": [
       "ground plates (lit.)"
@@ -990,6 +1044,9 @@
       "bracket sets",
       "bracketing"
     ],
+    "pinyin": "dǒugǒng (preferred)",
+    "chineseTraditional": "枓栱",
+    "chineseSimplified": "斗栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "blocks(s) and bracket arm(s) (lit.)"
@@ -1072,6 +1129,9 @@
       "Eastern Han Dynasty",
       "東漢朝"
     ],
+    "pinyin": "Dōng Hàn",
+    "chineseTraditional": "東漢",
+    "chineseSimplified": "东汉",
     "type": "time period",
     "timePeriod": [
       "Eastern Han"
@@ -1092,6 +1152,9 @@
       "Eastern Jin Dynasty",
       "東晉朝"
     ],
+    "pinyin": "Dōng Jìn",
+    "chineseTraditional": "東晉",
+    "chineseSimplified": "东晋",
     "type": "time period",
     "timePeriod": [
       "Eastern Jin"
@@ -1112,6 +1175,9 @@
       "Eastern Wei Kingdom",
       "東魏國"
     ],
+    "pinyin": "Dōng Wèi",
+    "chineseTraditional": "東魏",
+    "chineseSimplified": "东魏",
     "type": "time period",
     "timePeriod": [
       "Eastern Wei"
@@ -1135,6 +1201,9 @@
       "jì xīn zào",
       "jixin zao"
     ],
+    "pinyin": "jìxīnzào",
+    "chineseTraditional": "計心造",
+    "chineseSimplified": "计心造",
     "type": "architectural feature",
     "architecturalFeature": [
       "accounted heart"
@@ -1191,6 +1260,9 @@
       "tōu xīn zào",
       "touxin zao"
     ],
+    "pinyin": "tōuxīnzào",
+    "chineseTraditional": "偷心造",
+    "chineseSimplified": "偷心造",
     "type": "architectural feature",
     "architecturalFeature": [
       "stolen-heart (style)"
@@ -1255,6 +1327,9 @@
       "Wǔdài Shíguó",
       "Wu-tai Shih-kuo"
     ],
+    "pinyin": "Wǔdài Shíguó",
+    "chineseTraditional": "五代十國",
+    "chineseSimplified": "五代十国",
     "type": "time period",
     "timePeriod": [
       "Five Dynasties and Ten Kingdoms"
@@ -1272,6 +1347,9 @@
       "Wǔdài",
       "Wu-tai"
     ],
+    "pinyin": "Wǔdài",
+    "chineseTraditional": "五代",
+    "chineseSimplified": "五代",
     "type": "time period",
     "timePeriod": [
       "Five Dynasties"
@@ -1291,6 +1369,9 @@
       "Former Shu Kingdom",
       "前蜀國"
     ],
+    "pinyin": "Qián Shǔ",
+    "chineseTraditional": "前蜀",
+    "chineseSimplified": "前蜀",
     "type": "time period",
     "timePeriod": [
       "Former Shu"
@@ -1310,6 +1391,9 @@
       "cross beams (ATTCAT preferred)",
       "beams"
     ],
+    "pinyin": "fú",
+    "chineseTraditional": "栿",
+    "chineseSimplified": "栿",
     "type": "architectural feature",
     "architecturalFeature": [
       "cross beams (lit.)"
@@ -1423,6 +1507,9 @@
       "wall supporting bracket-arm (lit.)",
       "superficial bracket-arms (ATTCAT preferred)"
     ],
+    "pinyin": "fúbìgǒng",
+    "chineseTraditional": "扶壁栱",
+    "chineseSimplified": "扶壁栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "wall supporting bracket-arm (lit.)"
@@ -1468,6 +1555,9 @@
       "Han Dynasty",
       "漢朝"
     ],
+    "pinyin": "Hàn",
+    "chineseTraditional": "漢",
+    "chineseSimplified": "汉",
     "type": "time period",
     "timePeriod": [
       "Han"
@@ -1484,6 +1574,9 @@
       "庵",
       "ān"
     ],
+    "pinyin": "ān",
+    "chineseTraditional": "庵",
+    "chineseSimplified": "庵",
     "type": "site type",
     "siteType": [
       "an"
@@ -1503,6 +1596,9 @@
       "ku-chien-chu-ch`ün",
       "historic building group"
     ],
+    "pinyin": "gǔjiànzhùqún",
+    "chineseTraditional": "古建築群",
+    "chineseSimplified": "古建筑群",
     "type": "site type",
     "siteType": [
       "historic building group"
@@ -1522,6 +1618,9 @@
       "pu-chien-p`u-tso-hsieh-kung",
       "angled bracket arm between columns"
     ],
+    "pinyin": "bǔjiān pūzuò xiégǒng",
+    "chineseTraditional": "補間鋪作斜栱",
+    "chineseSimplified": "补间铺作斜栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "angled bracket arm between columns"
@@ -1541,6 +1640,9 @@
       "pu-chien-p`u-tso-t`ung-chu-t`ou-p`u-tso",
       "intercolumnar and column top bracket sets match"
     ],
+    "pinyin": "bǔjiān pūzuò tóng zhùtóu pūzuò",
+    "chineseTraditional": "補間鋪作同柱頭鋪作",
+    "chineseSimplified": "补间铺作同柱头铺作",
     "type": "architectural feature",
     "architecturalFeature": [
       "intercolumnar and column top bracket sets match"
@@ -1561,6 +1663,9 @@
       "corner pillars (ATTCAT perferred)",
       "corner columns"
     ],
+    "pinyin": "jiǎozhù",
+    "chineseTraditional": "角柱",
+    "chineseSimplified": "角柱",
     "type": "architectural feature",
     "architecturalFeature": [
       "corner pillars(lit.)"
@@ -1602,6 +1707,9 @@
       "金朝",
       "Jin Dynasty"
     ],
+    "pinyin": "Jīn",
+    "chineseTraditional": "金",
+    "chineseSimplified": "金",
     "type": "time period",
     "timePeriod": [
       "Jin"
@@ -1621,6 +1729,8 @@
       "Nánpíng",
       "南平"
     ],
+    "pinyin": "Jīngnán",
+    "chineseTraditional": "荊南",
     "type": "time period",
     "timePeriod": [
       "Jingnan"
@@ -1646,6 +1756,9 @@
       "lintels",
       "penetrating tie beams"
     ],
+    "pinyin": "lán'é",
+    "chineseTraditional": "闌額",
+    "chineseSimplified": "阑额",
     "type": "architectural feature",
     "architecturalFeature": [
       "forehead rail (lit.)"
@@ -1716,6 +1829,9 @@
       "後漢朝",
       "Later Han Dynasty"
     ],
+    "pinyin": "Hòu Hàn",
+    "chineseTraditional": "後漢",
+    "chineseSimplified": "后汉",
     "type": "time period",
     "timePeriod": [
       "Later Han"
@@ -1736,6 +1852,9 @@
       "後晉朝",
       "Later Jin Dynasty"
     ],
+    "pinyin": "Hòu Jìn",
+    "chineseTraditional": "後晉",
+    "chineseSimplified": "后晋",
     "type": "time period",
     "timePeriod": [
       "Later Jin"
@@ -1756,6 +1875,9 @@
       "後梁朝",
       "Later Liang Dynasty"
     ],
+    "pinyin": "Hòu Liáng",
+    "chineseTraditional": "後梁",
+    "chineseSimplified": "后梁",
     "type": "time period",
     "timePeriod": [
       "Later Liang"
@@ -1776,6 +1898,9 @@
       "後蜀朝",
       "Later Shu Dynasty"
     ],
+    "pinyin": "Hòu Shǔ",
+    "chineseTraditional": "後蜀",
+    "chineseSimplified": "后蜀",
     "type": "time period",
     "timePeriod": [
       "Hou Shu"
@@ -1797,6 +1922,9 @@
       "後唐朝",
       "Later Tang Dynasty"
     ],
+    "pinyin": "Hòu Táng",
+    "chineseTraditional": "後唐",
+    "chineseSimplified": "后唐",
     "type": "time period",
     "timePeriod": [
       "Hou Tang"
@@ -1818,6 +1946,9 @@
       "後周朝",
       "Later Zhou Dynasty"
     ],
+    "pinyin": "Hòu Zhōu",
+    "chineseTraditional": "後周",
+    "chineseSimplified": "后周",
     "type": "time period",
     "timePeriod": [
       "Hou Zhou"
@@ -1836,6 +1967,9 @@
       "beams",
       "cross beams (ATTCAT preferred)"
     ],
+    "pinyin": "liáng",
+    "chineseTraditional": "梁",
+    "chineseSimplified": "梁",
     "type": "architectural feature",
     "architecturalFeature": [
       "beams"
@@ -1932,6 +2066,9 @@
       "梁朝",
       "Liang Dynasty"
     ],
+    "pinyin": "Liáng",
+    "chineseTraditional": "梁",
+    "chineseSimplified": "梁",
     "type": "time period",
     "timePeriod": [
       "Liang"
@@ -1951,6 +2088,9 @@
       "遼朝",
       "Liao Dynasty"
     ],
+    "pinyin": "Liáo",
+    "chineseTraditional": "遼",
+    "chineseSimplified": "辽",
     "type": "time period",
     "timePeriod": [
       "Liao"
@@ -1971,6 +2111,9 @@
       "劉宋朝",
       "Liu Song Dynasty"
     ],
+    "pinyin": "Líu Sòng",
+    "chineseTraditional": "劉宋",
+    "chineseSimplified": "刘宋",
     "type": "time period",
     "timePeriod": [
       "Liu Song"
@@ -1989,6 +2132,9 @@
       "t'ang",
       "hall"
     ],
+    "pinyin": "táng",
+    "chineseTraditional": "堂",
+    "chineseSimplified": "堂",
     "type": "building type",
     "buildingType": [
       "hall"
@@ -2034,6 +2180,9 @@
       "閩國",
       "Min Kingdom"
     ],
+    "pinyin": "Mǐn",
+    "chineseTraditional": "閩",
+    "chineseSimplified": "闽",
     "type": "time period",
     "timePeriod": [
       "Min"
@@ -2052,6 +2201,9 @@
       "明朝",
       "Ming Dynasty"
     ],
+    "pinyin": "Míng",
+    "chineseTraditional": "明",
+    "chineseSimplified": "明",
     "type": "time period",
     "timePeriod": [
       "Ming"
@@ -2069,6 +2221,9 @@
       "sì",
       "ssu"
     ],
+    "pinyin": "sì",
+    "chineseTraditional": "寺",
+    "chineseSimplified": "寺",
     "type": "site type",
     "siteType": [
       "si"
@@ -2099,6 +2254,9 @@
       "北漢國",
       "Northern Han Kingdom"
     ],
+    "pinyin": "Běi Hàn",
+    "chineseTraditional": "北漢",
+    "chineseSimplified": "北汉",
     "type": "time period",
     "timePeriod": [
       "Northern Han"
@@ -2118,6 +2276,9 @@
       "Pei Ch'i",
       "Northern Qi"
     ],
+    "pinyin": "Běi Qí",
+    "chineseTraditional": "北齊",
+    "chineseSimplified": "北齐",
     "type": "time period",
     "timePeriod": [
       "Bei Qi"
@@ -2138,6 +2299,9 @@
       "北宋朝",
       "Northern Song Dynasty"
     ],
+    "pinyin": "Běi Sòng",
+    "chineseTraditional": "北宋",
+    "chineseSimplified": "北宋",
     "type": "time period",
     "timePeriod": [
       "Bei Song"
@@ -2157,6 +2321,9 @@
       "北魏朝",
       "Northern Wei Dynasty"
     ],
+    "pinyin": "Běi Wèi",
+    "chineseTraditional": "北魏",
+    "chineseSimplified": "北魏",
     "type": "time period",
     "timePeriod": [
       "Northern Wei"
@@ -2177,6 +2344,9 @@
       "North Wei Kingdom",
       "Northern Zhou"
     ],
+    "pinyin": "Běi Zhōu",
+    "chineseTraditional": "北周",
+    "chineseSimplified": "北周",
     "type": "time period",
     "timePeriod": [
       "North Zhou"
@@ -2196,6 +2366,9 @@
       "ming-chien-p`u-tso",
       "intercolumnar bracket sets in central bay"
     ],
+    "pinyin": "míngjiān pūzuò",
+    "chineseTraditional": "明間鋪作",
+    "chineseSimplified": "明间铺作",
     "type": "architectural feature",
     "architecturalFeature": [
       "intercolumnar bracket sets in central bay"
@@ -2215,6 +2388,9 @@
       "p`u-tso hsia-ang",
       "number of xia'ang in an eaves bracket set"
     ],
+    "pinyin": "pūzuò xià'áng",
+    "chineseTraditional": "鋪作下昂",
+    "chineseSimplified": "铺作下昂",
     "type": "architectural feature",
     "architecturalFeature": [
       "number of xia'ang in an eaves bracket set"
@@ -2235,6 +2411,9 @@
       "tower",
       "stupa"
     ],
+    "pinyin": "tǎ",
+    "chineseTraditional": "塔",
+    "chineseSimplified": "塔",
     "type": "building type",
     "buildingType": [
       "pagoda"
@@ -2272,6 +2451,9 @@
       "kung",
       "palace"
     ],
+    "pinyin": "gōng",
+    "chineseTraditional": "宮",
+    "chineseSimplified": "宫",
     "type": "site type",
     "siteType": [
       "palace"
@@ -2325,6 +2507,9 @@
       "hall",
       "royal hall"
     ],
+    "pinyin": "diàn",
+    "chineseTraditional": "殿",
+    "chineseSimplified": "殿",
     "type": "building type",
     "buildingType": [
       "hall"
@@ -2365,6 +2550,9 @@
       "t`ing",
       "pavilion"
     ],
+    "pinyin": "tíng",
+    "chineseTraditional": "亭",
+    "chineseSimplified": "亭",
     "type": "building type",
     "buildingType": [
       "pavilion"
@@ -2467,6 +2655,9 @@
       "leveling pillars (preferred)",
       "central bay columns"
     ],
+    "pinyin": "píngzhù",
+    "chineseTraditional": "平柱",
+    "chineseSimplified": "平柱",
     "type": "architectural feature",
     "architecturalFeature": [
       "level pillars (lit.)"
@@ -2527,6 +2718,9 @@
       "p`i-chu hsia-ang",
       "split-bamboo descending cantilever"
     ],
+    "pinyin": "pīzhú xià'áng",
+    "chineseTraditional": "批竹下昂",
+    "chineseSimplified": "批竹下昂",
     "type": "architectural feature",
     "architecturalFeature": [
       "split-bamboo descending cantilever"
@@ -2546,6 +2740,9 @@
       "Ch'ing-i-hou",
       "Post-Dynastic"
     ],
+    "pinyin": "Qīng yǐhòu",
+    "chineseTraditional": "清以後",
+    "chineseSimplified": "清以后",
     "type": "time period",
     "timePeriod": [
       "Post-Qing dynasty"
@@ -2567,6 +2764,9 @@
       "horizontally-positioned architrave",
       "architrave"
     ],
+    "pinyin": "pǔpāifāng",
+    "chineseTraditional": "普拍方",
+    "chineseSimplified": "普拍方",
     "type": "architectural feature",
     "architecturalFeature": [
       "universal capping beam (lit. ATTCAT2022)"
@@ -2661,6 +2861,9 @@
       "齊國",
       "Qi Kingdom"
     ],
+    "pinyin": "Qí",
+    "chineseTraditional": "齊",
+    "chineseSimplified": "齐",
     "type": "time period",
     "timePeriod": [
       "Qi"
@@ -2680,6 +2883,9 @@
       "Qin Dynasty",
       "秦朝"
     ],
+    "pinyin": "Qín",
+    "chineseTraditional": "秦",
+    "chineseSimplified": "秦",
     "type": "time period",
     "timePeriod": [
       "Qin"
@@ -2699,6 +2905,9 @@
       "清朝",
       "Qing Dynasty"
     ],
+    "pinyin": "Qīng",
+    "chineseTraditional": "清",
+    "chineseSimplified": "清",
     "type": "time period",
     "timePeriod": [
       "Qing"
@@ -2717,6 +2926,9 @@
       "ch`in-mien hsia-ang",
       "lute-face descending cantilever"
     ],
+    "pinyin": "qínmiàn xià'áng",
+    "chineseTraditional": "琴面下昂",
+    "chineseSimplified": "琴面下昂",
     "type": "architectural feature",
     "architecturalFeature": [
       "lute-face descending cantilever"
@@ -2735,6 +2947,9 @@
       "ch`in-mien-p`i-chu hsia-ang",
       "split-bamboo/lute face descending cantilever"
     ],
+    "pinyin": "qínmiàn-pīzhú xià'áng",
+    "chineseTraditional": "琴面/批竹下昂",
+    "chineseSimplified": "琴面/批竹下昂",
     "type": "architectural feature",
     "architecturalFeature": [
       "split-bamboo/lute face descending cantilever"
@@ -2752,6 +2967,9 @@
       "cí",
       "tz`u"
     ],
+    "pinyin": "cí",
+    "chineseTraditional": "祠",
+    "chineseSimplified": "祠",
     "type": "site type",
     "siteType": [
       "ci"
@@ -2771,6 +2989,9 @@
       "宋朝",
       "Song Dynasty"
     ],
+    "pinyin": "Sòng",
+    "chineseTraditional": "宋",
+    "chineseSimplified": "宋",
     "type": "time period",
     "timePeriod": [
       "Song"
@@ -2791,6 +3012,9 @@
       "南漢國",
       "Southern Han Kingdom"
     ],
+    "pinyin": "Nán Hàn",
+    "chineseTraditional": "南漢",
+    "chineseSimplified": "南汉",
     "type": "time period",
     "timePeriod": [
       "Southern Han"
@@ -2810,6 +3034,9 @@
       "南宋朝",
       "Southern Song Dynasty"
     ],
+    "pinyin": "Nán Sòng",
+    "chineseTraditional": "南宋",
+    "chineseSimplified": "南宋",
     "type": "time period",
     "timePeriod": [
       "Southern Song"
@@ -2829,6 +3056,9 @@
       "南唐國",
       "Southern Tang Kingdom"
     ],
+    "pinyin": "Nán Táng",
+    "chineseTraditional": "南唐",
+    "chineseSimplified": "南唐",
     "type": "time period",
     "timePeriod": [
       "Southern Tang"
@@ -2847,6 +3077,9 @@
       "gé",
       "ko"
     ],
+    "pinyin": "gé",
+    "chineseTraditional": "閣",
+    "chineseSimplified": "阁",
     "type": "building type",
     "buildingType": [
       "ge"
@@ -2883,6 +3116,8 @@
       "su-tu-po",
       "stupa"
     ],
+    "pinyin": "sūdǔbō",
+    "chineseTraditional": "窣堵波",
     "type": "building type",
     "buildingType": [
       "stupa"
@@ -2901,6 +3136,9 @@
       "隋朝",
       "Sui Dynasty"
     ],
+    "pinyin": "Suí",
+    "chineseTraditional": "隋",
+    "chineseSimplified": "隋",
     "type": "time period",
     "timePeriod": [
       "Sui"
@@ -2923,6 +3161,9 @@
       "column-and-beam frame",
       "column-beam-and-strut (-style)(structure)"
     ],
+    "pinyin": "táiliáng",
+    "chineseTraditional": "擡梁",
+    "chineseSimplified": "抬梁",
     "type": "architectural feature",
     "architecturalFeature": [
       "lifting beams"
@@ -3048,6 +3289,9 @@
       "唐朝",
       "Tang Dynasty"
     ],
+    "pinyin": "Táng",
+    "chineseTraditional": "唐",
+    "chineseSimplified": "唐",
     "type": "time period",
     "timePeriod": [
       "Tang"
@@ -3065,6 +3309,9 @@
       "庙",
       "miào"
     ],
+    "pinyin": "miào",
+    "chineseTraditional": "廟",
+    "chineseSimplified": "庙",
     "type": "site type",
     "siteType": [
       "miao"
@@ -3083,6 +3330,9 @@
       "Shíguó",
       "Shih-kuo"
     ],
+    "pinyin": "Shíguó",
+    "chineseTraditional": "十國",
+    "chineseSimplified": "十国",
     "type": "time period",
     "timePeriod": [
       "Ten Kingdoms"
@@ -3101,6 +3351,9 @@
       "Sānguó",
       "San-kuo"
     ],
+    "pinyin": "Sānguó",
+    "chineseTraditional": "三國",
+    "chineseSimplified": "三国",
     "type": "time period",
     "timePeriod": [
       "Three Kingdoms"
@@ -3119,6 +3372,9 @@
       "lóu",
       "loft-building"
     ],
+    "pinyin": "lóu",
+    "chineseTraditional": "樓",
+    "chineseSimplified": "楼",
     "type": "building type",
     "buildingType": [
       "loft-building"
@@ -3201,6 +3457,9 @@
       "里",
       "lǐ"
     ],
+    "pinyin": "lǐ",
+    "chineseTraditional": "里",
+    "chineseSimplified": "里",
     "type": "site type",
     "siteType": [
       "li"
@@ -3229,6 +3488,9 @@
       "Wèi, Jìn, Nán-Běi Cháo",
       "Wei, Chin, Nan-Pei Ch'ao"
     ],
+    "pinyin": "Wèi, Jìn, Nán-Běi Cháo",
+    "chineseTraditional": "魏晉南北朝",
+    "chineseSimplified": "魏晋南北朝",
     "type": "time period",
     "timePeriod": [
       "Wei, Jin, Northern and Southern Dynasties"
@@ -3251,6 +3513,9 @@
       "barbicans",
       "jar cities"
     ],
+    "pinyin": "wèngchéng",
+    "chineseTraditional": "甕城",
+    "chineseSimplified": "瓮城",
     "type": "architectural feature",
     "architecturalFeature": [
       "jar-shaped defensive wall (lit.)"
@@ -3281,6 +3546,9 @@
       "Western Han Dynasty",
       "西漢朝"
     ],
+    "pinyin": "Xī Hàn",
+    "chineseTraditional": "西漢",
+    "chineseSimplified": "西汉",
     "type": "time period",
     "timePeriod": [
       "Western Han"
@@ -3301,6 +3569,9 @@
       "Western Jin Dynasty",
       "西晋朝"
     ],
+    "pinyin": "Xī Jìn",
+    "chineseTraditional": "西晉",
+    "chineseSimplified": "西晋",
     "type": "time period",
     "timePeriod": [
       "Western Jin"
@@ -3320,6 +3591,9 @@
       "Western Wei Kingdom",
       "西魏國"
     ],
+    "pinyin": "Xī Wèi",
+    "chineseTraditional": "西魏",
+    "chineseSimplified": "西魏",
     "type": "time period",
     "timePeriod": [
       "Western Wei"
@@ -3340,6 +3614,9 @@
       "Wuyue Kingdom",
       "吳越國"
     ],
+    "pinyin": "Wú-Yuè",
+    "chineseTraditional": "吳越",
+    "chineseSimplified": "吴越",
     "type": "time period",
     "timePeriod": [
       "Wu-Yue"
@@ -3359,6 +3636,9 @@
       "Wu Kingdom",
       "吳國"
     ],
+    "pinyin": "Wú",
+    "chineseTraditional": "吳",
+    "chineseSimplified": "吴",
     "type": "time period",
     "timePeriod": [
       "Wu"
@@ -3378,6 +3658,9 @@
       "Xin Dynasty",
       "新朝"
     ],
+    "pinyin": "Xīn",
+    "chineseTraditional": "新",
+    "chineseSimplified": "新",
     "type": "time period",
     "timePeriod": [
       "Xin"
@@ -3398,6 +3681,9 @@
       "Western Xia Kingdom",
       "西夏國"
     ],
+    "pinyin": "Xī Xià",
+    "chineseTraditional": "西夏",
+    "chineseSimplified": "西夏",
     "type": "time period",
     "timePeriod": [
       "Western Xia"
@@ -3421,6 +3707,9 @@
       "eaves-column-top-ties",
       "end-to-end architraves"
     ],
+    "pinyin": "yán’é",
+    "chineseTraditional": "檐額",
+    "chineseSimplified": "檐额",
     "type": "architectural feature",
     "architecturalFeature": [
       "eaves forehead (lit.)"
@@ -3481,6 +3770,9 @@
       "ying-kung",
       "shadow bracket-arm"
     ],
+    "pinyin": "yǐnggǒng",
+    "chineseTraditional": "影栱",
+    "chineseSimplified": "影栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "shadow bracket-arm"
@@ -3535,6 +3827,9 @@
       "\"Shadow-works timber structure\" (lit.)",
       "Painted representations of timber architecture"
     ],
+    "pinyin": "yǐngzuò mùgòu",
+    "chineseTraditional": "影作木構",
+    "chineseSimplified": "影作木构",
     "type": "architectural feature",
     "architecturalFeature": [
       "\"Shadow-works timber structure\" (lit.)"
@@ -3585,6 +3880,9 @@
       "shadow works (ATTCAT preferred)",
       "puzuo images"
     ],
+    "pinyin": "yǐngzuò",
+    "chineseTraditional": "影作",
+    "chineseSimplified": "影作",
     "type": "architectural feature",
     "architecturalFeature": [
       "image works (lit.)"
@@ -3642,6 +3940,9 @@
       "Yuan Dynasty",
       "元朝"
     ],
+    "pinyin": "Yuán",
+    "chineseTraditional": "元",
+    "chineseSimplified": "元",
     "type": "time period",
     "timePeriod": [
       "Yuan"
@@ -3668,6 +3969,9 @@
       "pillars (ATTCAT preferred)",
       "columns"
     ],
+    "pinyin": "zhù",
+    "chineseTraditional": "柱",
+    "chineseSimplified": "柱",
     "type": "architectural feature",
     "architecturalFeature": [
       "pillars (lit.)"
@@ -3725,6 +4029,9 @@
       "slanted bracket arms (ATTCAT preferred)",
       "(descending or ascending) cantilevers"
     ],
+    "pinyin": "áng",
+    "chineseTraditional": "昂",
+    "chineseSimplified": "昂",
     "type": "architectural feature",
     "architecturalFeature": [
       "raise up; lift up (lit.)"
@@ -3831,6 +4138,9 @@
       "plate tiles (ATTCAT preferred translation)",
       "flat tiles"
     ],
+    "pinyin": "bǎnwǎ",
+    "chineseTraditional": "瓪瓦",
+    "chineseSimplified": "瓪瓦",
     "type": "architectural feature",
     "architecturalFeature": [
       "concave tiles (lit.)"
@@ -3873,6 +4183,9 @@
       "in-bay additional puzuo-set",
       "intercolumnar set"
     ],
+    "pinyin": "bǔjiān pūzuò",
+    "chineseTraditional": "補間鋪作",
+    "chineseSimplified": "补间铺作",
     "type": "architectural feature",
     "architecturalFeature": [
       "supplementary bay corbelling (lit.)"
@@ -3978,6 +4291,9 @@
       "multi-lipped plate tiles (lit.)",
       "multi-lipped plate tiles (ATTCAT preferred)"
     ],
+    "pinyin": "chóngchún bǎnwǎ",
+    "chineseTraditional": "重唇瓪瓦",
+    "chineseSimplified": "重唇瓪瓦",
     "type": "architectural feature",
     "architecturalFeature": [
       "multi-lipped plate tiles (lit.)"
@@ -4003,6 +4319,9 @@
       "rafter (lit.)",
       "rafters"
     ],
+    "pinyin": "chuán",
+    "chineseTraditional": "椽",
+    "chineseSimplified": "椽",
     "type": "architectural feature",
     "architecturalFeature": [
       "rafter (lit.)"
@@ -4023,6 +4342,9 @@
       "hooked heads (lit.)",
       "barrel tile ends"
     ],
+    "pinyin": "gōutóu",
+    "chineseTraditional": "勾頭",
+    "chineseSimplified": "勾头",
     "type": "architectural feature",
     "architecturalFeature": [
       "hooked heads (lit.)"
@@ -4077,6 +4399,9 @@
       "barrel tiles (lit.)",
       "barrel tiles (ATTCAT preferred)"
     ],
+    "pinyin": "tǒngwǎ",
+    "chineseTraditional": "筒瓦",
+    "chineseSimplified": "筒瓦",
     "type": "architectural feature",
     "architecturalFeature": [
       "barrel tiles (lit.)"
@@ -4104,6 +4429,9 @@
       "barrel tile ends",
       "eave-end tile"
     ],
+    "pinyin": "wǎdàng",
+    "chineseTraditional": "瓦當",
+    "chineseSimplified": "瓦当",
     "type": "architectural feature",
     "architecturalFeature": [
       "tile ends (lit.)"
@@ -4153,6 +4481,9 @@
       "eaves pillars (lit.)",
       "eaves pillars (ATTCAT preferred translation)"
     ],
+    "pinyin": "yánzhù",
+    "chineseTraditional": "檐柱",
+    "chineseSimplified": "檐柱",
     "type": "architectural feature",
     "architecturalFeature": [
       "eaves pillars (lit.)"
@@ -4194,6 +4525,9 @@
       "lou-ko-shih-t`a",
       "tower-style pagodas"
     ],
+    "pinyin": "lóugé shì tǎ",
+    "chineseTraditional": "樓閣式塔",
+    "chineseSimplified": "楼阁式塔",
     "type": "building type",
     "buildingType": [
       "tower-style pagodas"
@@ -4214,6 +4548,9 @@
       "polychrome painting works (lit.)",
       "polychrome painting works"
     ],
+    "pinyin": "cǎihuàzuò",
+    "chineseTraditional": "彩畫作",
+    "chineseSimplified": "彩画作",
     "type": "architectural feature",
     "architecturalFeature": [
       "polychrome painting works (lit.)"
@@ -4243,6 +4580,9 @@
       "column-top-tie",
       "header"
     ],
+    "pinyin": "é",
+    "chineseTraditional": "額",
+    "chineseSimplified": "额",
     "type": "architectural feature",
     "architecturalFeature": [
       "forehead (lit.)"
@@ -4333,6 +4673,9 @@
       "forehead tie beams (lit.)",
       "forehead tie beams"
     ],
+    "pinyin": "éfāng",
+    "chineseTraditional": "額枋",
+    "chineseSimplified": "额枋",
     "type": "architectural feature",
     "architecturalFeature": [
       "forehead tie beams (lit.)"
@@ -4379,6 +4722,9 @@
       "rafter plate; a horizontal structural member under and parallel to the purlins",
       "squared beams"
     ],
+    "pinyin": "fāng",
+    "chineseTraditional": "方",
+    "chineseSimplified": "方",
     "type": "architectural feature",
     "architecturalFeature": [
       "square; square-shaped (beam or joist) (lit.)"
@@ -4415,6 +4761,9 @@
       "tie beam (lit.)",
       "tie beams"
     ],
+    "pinyin": "fāng",
+    "chineseTraditional": "枋",
+    "chineseSimplified": "枋",
     "type": "architectural feature",
     "architecturalFeature": [
       "tie beam (lit.)"
@@ -4438,6 +4787,9 @@
       "Liùcháo",
       "Liu-ch'ao"
     ],
+    "pinyin": "Liùcháo",
+    "chineseTraditional": "六朝",
+    "chineseSimplified": "六朝",
     "type": "time period",
     "timePeriod": [
       "Six Dynasties"
@@ -4457,6 +4809,9 @@
       "crescent moon defensive walls (lit.)",
       "crescent moon defensive walls (ATTCAT preferred)"
     ],
+    "pinyin": "yuèchéng",
+    "chineseTraditional": "月城",
+    "chineseSimplified": "月城",
     "type": "architectural feature",
     "architecturalFeature": [
       "crescent moon defensive walls (lit.)"
@@ -4477,6 +4832,9 @@
       "pillar-top layering work (lit.)",
       "pillar-top corbelling (ATTCAT preferred)"
     ],
+    "pinyin": "zhùtóu pūzuò",
+    "chineseTraditional": "柱頭鋪作",
+    "chineseSimplified": "柱头铺作",
     "type": "architectural feature",
     "architecturalFeature": [
       "pillar-top layering work (lit.)"
@@ -4522,6 +4880,9 @@
       "salients",
       "yangma"
     ],
+    "pinyin": "mǎmiàn",
+    "chineseTraditional": "馬面",
+    "chineseSimplified": "马面",
     "type": "architectural feature",
     "architecturalFeature": [
       "horse face (lit.)"
@@ -4563,6 +4924,9 @@
       "fausse-brayes",
       "ramparts"
     ],
+    "pinyin": "yángmǎchéng",
+    "chineseTraditional": "羊馬城",
+    "chineseSimplified": "羊马城",
     "type": "architectural feature",
     "architecturalFeature": [
       "goat-and-horse defensive wall (lit.)"
@@ -4613,6 +4977,9 @@
       "front platform",
       "terrace"
     ],
+    "pinyin": "yuètái",
+    "chineseTraditional": "月臺",
+    "chineseSimplified": "月台",
     "type": "building type",
     "buildingType": [
       "front platform"
@@ -4642,6 +5009,9 @@
       "cliff tomb (ATTCAT preferred translation)",
       "rock-cut tomb"
     ],
+    "pinyin": "yámù",
+    "chineseTraditional": "崖墓",
+    "chineseSimplified": "崖墓",
     "type": "site type",
     "siteType": [
       "cliff tomb (ATTCAT preferred translation)"
@@ -4680,6 +5050,9 @@
       "hip roof",
       "hipped roof"
     ],
+    "pinyin": "wǔdiàndǐng",
+    "chineseTraditional": "廡殿頂",
+    "chineseSimplified": "庑殿顶",
     "type": "architectural feature",
     "architecturalFeature": [
       "hip roof"
@@ -4727,6 +5100,9 @@
       "hip roof",
       "five-spine roof"
     ],
+    "pinyin": "sì'ēdǐng",
+    "chineseTraditional": "四阿頂",
+    "chineseSimplified": "四阿顶",
     "type": "architectural feature",
     "architecturalFeature": [
       "hip roof"
@@ -4794,6 +5170,9 @@
       "Ying-tsao fashih",
       "building standards"
     ],
+    "pinyin": "Yíngzào fǎshì",
+    "chineseTraditional": "營造法式",
+    "chineseSimplified": "营造法式",
     "type": "architectural feature",
     "architecturalFeature": [
       "Yingzao Fashi"
@@ -4818,6 +5197,9 @@
       "stone plinth",
       "stone pedestal for a column"
     ],
+    "pinyin": "zhùchǔ",
+    "chineseTraditional": "柱礎",
+    "chineseSimplified": "柱础",
     "type": "architectural feature",
     "architecturalFeature": [
       "base"
@@ -4935,6 +5317,9 @@
       "tingtang frameworks",
       "audience-hall or reception-hall"
     ],
+    "pinyin": "tīngtáng",
+    "chineseTraditional": "廳堂",
+    "chineseSimplified": "厅堂",
     "type": "building type",
     "buildingType": [
       "mansion hall (ATTCAT preferred)"
@@ -5029,6 +5414,9 @@
       "diantang frameworks",
       "diantang construction"
     ],
+    "pinyin": "diàntáng",
+    "chineseTraditional": "殿堂",
+    "chineseSimplified": "殿堂",
     "type": "building type",
     "buildingType": [
       "diantang"
@@ -5131,6 +5519,9 @@
       "log cabin",
       "interlocking timber"
     ],
+    "pinyin": "jǐnggàn",
+    "chineseTraditional": "井幹",
+    "chineseSimplified": "井干",
     "type": "architectural feature",
     "architecturalFeature": [
       "jinggangoujia/gouzao"
@@ -5199,6 +5590,9 @@
       "jiéjiān bǎnzhàng",
       "chieh-chien pan-chang"
     ],
+    "pinyin": "jiéjiān bǎnzhàng",
+    "chineseTraditional": "截間版帳",
+    "chineseSimplified": "截间版帐",
     "type": "architectural feature",
     "architecturalFeature": [
       "jiejian banzhang"
@@ -5220,6 +5614,9 @@
       "camel's hump (lit.)",
       "camel's-hump-shaped brace"
     ],
+    "pinyin": "tuófēng",
+    "chineseTraditional": "駝峰",
+    "chineseSimplified": "驼峰",
     "type": "architectural feature",
     "architecturalFeature": [
       "camel's hump (lit.)"
@@ -5239,6 +5636,9 @@
       "wing-shaped bracket arm",
       "wing-shaped bracket (ATTCAT preferred)"
     ],
+    "pinyin": "yìxínggǒng",
+    "chineseTraditional": "翼形栱",
+    "chineseSimplified": "翼形栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "wing-shaped bracket arm"
@@ -5354,6 +5754,9 @@
       "cháojū",
       "ch'ao-chü"
     ],
+    "pinyin": "cháojū",
+    "chineseTraditional": "巢居",
+    "chineseSimplified": "巢居",
     "type": "building type",
     "buildingType": [
       "chaoju"
@@ -5392,6 +5795,9 @@
       "dew terrace (lit.)",
       "exposed terrace (lit.)"
     ],
+    "pinyin": "lùtái",
+    "chineseTraditional": "露臺",
+    "chineseSimplified": "露台",
     "type": "building type",
     "buildingType": [
       "dew terrace (lit.)"
@@ -5602,6 +6008,9 @@
       "ascending cantilever",
       "upward cantilever"
     ],
+    "pinyin": "shàng'áng",
+    "chineseTraditional": "上昂",
+    "chineseSimplified": "上昂",
     "type": "architectural feature",
     "architecturalFeature": [
       "up-ang（lit.）"
@@ -5674,6 +6083,9 @@
       "t'iao-wo",
       "to prop and rotate (lit.)"
     ],
+    "pinyin": "tiǎowò",
+    "chineseTraditional": "挑斡",
+    "chineseSimplified": "挑斡",
     "type": "architectural feature",
     "architecturalFeature": [
       "to prop and rotate (lit.)"
@@ -5713,6 +6125,9 @@
       "top beam",
       "two-rafter crossbeam"
     ],
+    "pinyin": "píngliáng",
+    "chineseTraditional": "平梁",
+    "chineseSimplified": "平梁",
     "type": "architectural feature",
     "architecturalFeature": [
       "level, flat; even; roofbeam, ridgepole (lit.)"
@@ -5767,6 +6182,9 @@
       "2-rafter beam",
       "two-rafter-long beam"
     ],
+    "pinyin": "rǔfú",
+    "chineseTraditional": "乳栿",
+    "chineseSimplified": "乳栿",
     "type": "architectural feature",
     "architecturalFeature": [
       "mammary, newborn; beam (lit.)"
@@ -5898,6 +6316,9 @@
       "one-rafter beam",
       "tie beam"
     ],
+    "pinyin": "zhāqiān",
+    "chineseTraditional": "剳牵",
+    "chineseSimplified": "剳牵",
     "type": "architectural feature",
     "architecturalFeature": [
       "to stitch and bind (lit.)"
@@ -5935,6 +6356,9 @@
       "hsin-chien",
       "central bay (ATTCAT preferred translation)"
     ],
+    "pinyin": "xīnjiān",
+    "chineseTraditional": "心間",
+    "chineseSimplified": "心间",
     "type": "architectural feature",
     "architecturalFeature": [
       "central bay (ATTCAT preferred translation)"
@@ -6004,6 +6428,9 @@
       "gable and hip roof",
       "gable-on-hip roof"
     ],
+    "pinyin": "xiēshān",
+    "chineseTraditional": "歇山",
+    "chineseSimplified": "歇山",
     "type": "architectural feature",
     "architecturalFeature": [
       "interrupted or halted mountain (peak) (lit.)"
@@ -6040,6 +6467,9 @@
       "tan-pi",
       "cinnabar steps or platforms (lit.)"
     ],
+    "pinyin": "dānbì",
+    "chineseTraditional": "丹陛",
+    "chineseSimplified": "丹陛",
     "type": "architectural feature",
     "architecturalFeature": [
       "cinnabar steps or platforms (lit.)"
@@ -6132,6 +6562,9 @@
       "tan-ch'ih",
       "cinnabar staircase or courtyard (lit.)"
     ],
+    "pinyin": "dānchí",
+    "chineseTraditional": "丹墀",
+    "chineseSimplified": "丹墀",
     "type": "architectural feature",
     "architecturalFeature": [
       "cinnabar staircase or courtyard (lit.)"
@@ -6225,6 +6658,9 @@
       "hsüan-shan",
       "overhanging gable roof"
     ],
+    "pinyin": "xúanshān",
+    "chineseTraditional": "懸山",
+    "chineseSimplified": "悬山",
     "type": "architectural feature",
     "architecturalFeature": [
       "overhanging gable roof"
@@ -6250,6 +6686,9 @@
       "a firm or rigid mountain (lit.)",
       "flush gable roof"
     ],
+    "pinyin": "yìngshān",
+    "chineseTraditional": "硬山",
+    "chineseSimplified": "硬山",
     "type": "architectural feature",
     "architecturalFeature": [
       "a firm or rigid mountain (lit.)"
@@ -6289,6 +6728,9 @@
       "xiégǒng",
       "hsieh-kung"
     ],
+    "pinyin": "xiégǒng",
+    "chineseTraditional": "斜栱",
+    "chineseSimplified": "斜栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "xiegong"
@@ -6317,6 +6759,9 @@
       "jiān",
       "chien"
     ],
+    "pinyin": "jiān",
+    "chineseTraditional": "間",
+    "chineseSimplified": "间",
     "type": "architectural feature",
     "architecturalFeature": [
       "jian"
@@ -6353,6 +6798,9 @@
       "cìjiān",
       "tz'u-chien"
     ],
+    "pinyin": "cìjiān",
+    "chineseTraditional": "次間",
+    "chineseSimplified": "次间",
     "type": "architectural feature",
     "architecturalFeature": [
       "cijian"
@@ -6371,6 +6819,9 @@
       "shāojiān",
       "shao-chien"
     ],
+    "pinyin": "shāojiān",
+    "chineseTraditional": "梢間",
+    "chineseSimplified": "梢间",
     "type": "architectural feature",
     "architecturalFeature": [
       "shaojian"
@@ -6411,6 +6862,9 @@
       "jìnjiān",
       "chin-chien"
     ],
+    "pinyin": "jìnjiān",
+    "chineseTraditional": "盡間",
+    "chineseSimplified": "尽间",
     "type": "architectural feature",
     "architecturalFeature": [
       "jinjian"
@@ -6430,6 +6884,9 @@
       "tang-hsin-chien",
       "central bay"
     ],
+    "pinyin": "dāngxīnjiān",
+    "chineseTraditional": "當心間",
+    "chineseSimplified": "当心间",
     "type": "architectural feature",
     "architecturalFeature": [
       "central bay"
@@ -6464,6 +6921,9 @@
       "figured ceiling",
       "pondweed well"
     ],
+    "pinyin": "zǎojǐng",
+    "chineseTraditional": "藻井",
+    "chineseSimplified": "藻井",
     "type": "architectural feature",
     "architecturalFeature": [
       "pondweed (or water-plant) well (lit.)"
@@ -6515,6 +6975,9 @@
       "màngǒng",
       "man-kung"
     ],
+    "pinyin": "màngǒng",
+    "chineseTraditional": "慢栱",
+    "chineseSimplified": "慢栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "mangong"
@@ -6572,6 +7035,9 @@
       "枠肘木",
       "肘木"
     ],
+    "pinyin": "lìnggǒng",
+    "chineseTraditional": "令栱",
+    "chineseSimplified": "令栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "order bracket-arm"
@@ -6628,6 +7094,9 @@
       "dǒu",
       "tou"
     ],
+    "pinyin": "dǒu",
+    "chineseTraditional": "枓",
+    "chineseSimplified": "斗",
     "type": "architectural feature",
     "architecturalFeature": [
       "dou"
@@ -6652,6 +7121,9 @@
       "lúdǒu",
       "lu-tou"
     ],
+    "pinyin": "lúdǒu",
+    "chineseTraditional": "櫨枓",
+    "chineseSimplified": "栌斗",
     "type": "architectural feature",
     "architecturalFeature": [
       "ludou"
@@ -6680,6 +7152,9 @@
       "sǎndǒu",
       "san-tou"
     ],
+    "pinyin": "sǎndǒu",
+    "chineseTraditional": "散枓",
+    "chineseSimplified": "散斗",
     "type": "architectural feature",
     "architecturalFeature": [
       "sandou"
@@ -6717,6 +7192,9 @@
       "Stilt house",
       "(raised) pile balustrade (lit.)"
     ],
+    "pinyin": "gānlán",
+    "chineseTraditional": "干闌",
+    "chineseSimplified": "干栏",
     "type": "architectural feature",
     "architecturalFeature": [
       "Pile structures or dwellings (ATTCAT preferred translation)"
@@ -6756,6 +7234,9 @@
       "栏",
       "lán"
     ],
+    "pinyin": "lán",
+    "chineseTraditional": "欄",
+    "chineseSimplified": "栏",
     "type": "architectural feature",
     "architecturalFeature": [
       "lan"
@@ -6772,6 +7253,9 @@
       "墓",
       "mù"
     ],
+    "pinyin": "mù",
+    "chineseTraditional": "墓",
+    "chineseSimplified": "墓",
     "type": "site type",
     "siteType": [
       "mu"
@@ -6790,6 +7274,9 @@
       "dílóu",
       "ti-lo"
     ],
+    "pinyin": "dílóu",
+    "chineseTraditional": "敵樓",
+    "chineseSimplified": "敌楼",
     "type": "building type",
     "buildingType": [
       "dilou"
@@ -6826,6 +7313,9 @@
       "tái",
       "t`ai"
     ],
+    "pinyin": "tái",
+    "chineseTraditional": "臺",
+    "chineseSimplified": "台",
     "type": "building type",
     "buildingType": [
       "tai"
@@ -6865,6 +7355,9 @@
       "líulíwǎ",
       "liu-li-wa"
     ],
+    "pinyin": "líulíwǎ",
+    "chineseTraditional": "琉璃瓦",
+    "chineseSimplified": "琉璃瓦",
     "type": "architectural feature",
     "architecturalFeature": [
       "liuliwa"
@@ -6885,6 +7378,9 @@
       "pseudo-cantilever",
       "false ang"
     ],
+    "pinyin": "jiǎ’áng",
+    "chineseTraditional": "假昂",
+    "chineseSimplified": "假昂",
     "type": "architectural feature",
     "architecturalFeature": [
       "simulated ang (lit.)"
@@ -7032,6 +7528,9 @@
       "nídàogǒng",
       "ni-tao-kung"
     ],
+    "pinyin": "nídàogǒng",
+    "chineseTraditional": "泥道栱",
+    "chineseSimplified": "泥道栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "nidaogong"
@@ -7067,6 +7566,9 @@
       "nídào màngǒng",
       "ni-tao man-kung"
     ],
+    "pinyin": "nídào màngǒng",
+    "chineseTraditional": "泥道慢栱",
+    "chineseSimplified": "泥道慢栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "nidao mangong"
@@ -7106,6 +7608,9 @@
       "gǒng",
       "kung"
     ],
+    "pinyin": "gǒng",
+    "chineseTraditional": "栱",
+    "chineseSimplified": "栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "gong"
@@ -7168,6 +7673,9 @@
       "ancestral temple",
       "ancestral hall"
     ],
+    "pinyin": "cítáng",
+    "chineseTraditional": "祠堂",
+    "chineseSimplified": "祠堂",
     "type": "building type",
     "buildingType": [
       "sacrificial hall (lit.)"
@@ -7198,6 +7706,9 @@
       "central bay",
       "bright bay"
     ],
+    "pinyin": "míngjiān",
+    "chineseTraditional": "明間",
+    "chineseSimplified": "明间",
     "type": "architectural feature",
     "architecturalFeature": [
       "central bay"
@@ -7284,6 +7795,9 @@
       "flower arms",
       "flower or petal arms"
     ],
+    "pinyin": "huāgǒng",
+    "chineseTraditional": "華栱",
+    "chineseSimplified": "华栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "perpendicular bracket arm"
@@ -7364,6 +7878,9 @@
       "címiào",
       "tz'u-miao"
     ],
+    "pinyin": "címiào",
+    "chineseTraditional": "祠廟",
+    "chineseSimplified": "祠庙",
     "type": "site type",
     "siteType": [
       "cimiao"
@@ -7404,6 +7921,9 @@
       "tàimiào",
       "t'ai-miao"
     ],
+    "pinyin": "tàimiào",
+    "chineseTraditional": "太廟",
+    "chineseSimplified": "太庙",
     "type": "site type",
     "siteType": [
       "taimiao"
@@ -7422,6 +7942,9 @@
       "tánmiào",
       "t'an-miao"
     ],
+    "pinyin": "tánmiào",
+    "chineseTraditional": "壇廟",
+    "chineseSimplified": "坛庙",
     "type": "site type",
     "siteType": [
       "tanmiao"
@@ -7470,6 +7993,9 @@
       "tán",
       "t'an"
     ],
+    "pinyin": "tán",
+    "chineseTraditional": "壇",
+    "chineseSimplified": "坛",
     "type": "building type",
     "buildingType": [
       "tan"
@@ -7498,6 +8024,9 @@
       "lóugé",
       "lou-ko"
     ],
+    "pinyin": "lóugé",
+    "chineseTraditional": "樓閣",
+    "chineseSimplified": "楼阁",
     "type": "building type",
     "buildingType": [
       "louge"
@@ -7517,6 +8046,9 @@
       "down-ang (lit.)",
       "descending cantilever"
     ],
+    "pinyin": "xià'áng",
+    "chineseTraditional": "下昂",
+    "chineseSimplified": "下昂",
     "type": "architectural feature",
     "architecturalFeature": [
       "down-ang (lit.)"
@@ -7591,6 +8123,9 @@
       "illustrious markers (lit.)",
       "monumental column"
     ],
+    "pinyin": "huábiǎo",
+    "chineseTraditional": "華表",
+    "chineseSimplified": "华表",
     "type": "building type",
     "buildingType": [
       "illustrious markers (lit.)"
@@ -7714,6 +8249,9 @@
       "side view rendering",
       "section"
     ],
+    "pinyin": "cèyàng",
+    "chineseTraditional": "側樣",
+    "chineseSimplified": "侧样",
     "type": "architectural feature",
     "architecturalFeature": [
       "side appearance (lit.)"
@@ -7743,6 +8281,9 @@
       "wu-t'ou-men",
       "raven-black head gate (lit.)"
     ],
+    "pinyin": "wūtóumén",
+    "chineseTraditional": "烏頭門",
+    "chineseSimplified": "乌头门",
     "type": "building type",
     "buildingType": [
       "raven-black head gate (lit.)"
@@ -7815,6 +8356,9 @@
       "língxīngmén",
       "ling-hsing-men"
     ],
+    "pinyin": "língxīngmén",
+    "chineseTraditional": "欞星門（靈星門）",
+    "chineseSimplified": "棂星门（灵星门）",
     "type": "building type",
     "buildingType": [
       "lingxingmen"
@@ -7888,6 +8432,9 @@
       "rough structural frame",
       "draft frame (lit.)"
     ],
+    "pinyin": "cǎojià",
+    "chineseTraditional": "草架",
+    "chineseSimplified": "草架",
     "type": "architectural feature",
     "architecturalFeature": [
       "rough structural frame"
@@ -7947,6 +8494,9 @@
       "gable-on-hip roof",
       "gable and hip roof"
     ],
+    "pinyin": "shàliǎngtóu",
+    "chineseTraditional": "厦兩頭",
+    "chineseSimplified": "厦两头",
     "type": "architectural feature",
     "architecturalFeature": [
       "hip-gable roof (ATTCAT preferred translation)"
@@ -8040,6 +8590,9 @@
       "pu sha-liang-t'ou",
       "overhanging gable roof"
     ],
+    "pinyin": "bù shàliǎngtóu",
+    "chineseTraditional": "不厦兩頭",
+    "chineseSimplified": "不厦两头",
     "type": "architectural feature",
     "architecturalFeature": [
       "overhanging gable roof"
@@ -8068,6 +8621,9 @@
       "pointed roof (ATTCAT preferred translation)",
       "peaked roof"
     ],
+    "pinyin": "cuánjiān",
+    "chineseTraditional": "攢尖",
+    "chineseSimplified": "攒尖",
     "type": "architectural feature",
     "architecturalFeature": [
       "massed [into a] point (lit.)"
@@ -8145,6 +8701,9 @@
       "hsieh-shan chuan-chiao",
       "hip-gable roof"
     ],
+    "pinyin": "xiēshān zhuǎnjiǎo",
+    "chineseTraditional": "歇山轉角",
+    "chineseSimplified": "歇山转角",
     "type": "architectural feature",
     "architecturalFeature": [
       "hip-gable roof"
@@ -8238,6 +8797,9 @@
       "ta-o",
       "great forehead (lit.)"
     ],
+    "pinyin": "dà'é",
+    "chineseTraditional": "大額",
+    "chineseSimplified": "大额",
     "type": "architectural feature",
     "architecturalFeature": [
       "great forehead (lit.)"
@@ -8337,6 +8899,9 @@
       "píngshǔi",
       "p'ing-shui"
     ],
+    "pinyin": "píngshǔi",
+    "chineseTraditional": "平水",
+    "chineseSimplified": "平水",
     "type": "architectural feature",
     "architecturalFeature": [
       "pingshui"
@@ -8400,6 +8965,9 @@
       "columns are omitted",
       "column omission"
     ],
+    "pinyin": "jiǎnzhùzào",
+    "chineseTraditional": "減柱造",
+    "chineseSimplified": "减柱造",
     "type": "architectural feature",
     "architecturalFeature": [
       "column elimination"
@@ -8576,6 +9144,9 @@
       "tiàotóu",
       "t'iao-t'ou"
     ],
+    "pinyin": "tiàotóu",
+    "chineseTraditional": "跳頭",
+    "chineseSimplified": "跳头",
     "type": "architectural feature",
     "architecturalFeature": [
       "tiaotou"
@@ -8595,6 +9166,9 @@
       "ts'ao-chia-pai-yen",
       "rough/trial assembly(lit.)"
     ],
+    "pinyin": "cǎojià bǎiyàn",
+    "chineseTraditional": "草架擺驗",
+    "chineseSimplified": "草架摆验",
     "type": "architectural feature",
     "architecturalFeature": [
       "rough/trial assembly(lit.)"
@@ -8651,6 +9225,9 @@
       "Zhōnghuá mínguó",
       "Chung-hua min-kuo"
     ],
+    "pinyin": "Zhōnghuá mínguó",
+    "chineseTraditional": "中華民國",
+    "chineseSimplified": "中华民国",
     "type": "time period",
     "timePeriod": [
       "Republican Period"
@@ -8670,6 +9247,9 @@
       "Xia Dynasty",
       "夏朝"
     ],
+    "pinyin": "Xià",
+    "chineseTraditional": "夏",
+    "chineseSimplified": "夏",
     "type": "time period",
     "timePeriod": [
       "Xia"
@@ -8688,6 +9268,9 @@
       "Shang Dynasty",
       "商朝"
     ],
+    "pinyin": "Shāng",
+    "chineseTraditional": "商",
+    "chineseSimplified": "商",
     "type": "time period",
     "timePeriod": [
       "Shang"
@@ -8707,6 +9290,9 @@
       "Western Zhou Dynasty",
       "西周朝"
     ],
+    "pinyin": "Xī Zhōu",
+    "chineseTraditional": "西周",
+    "chineseSimplified": "西周",
     "type": "time period",
     "timePeriod": [
       "Western Zhou"
@@ -8727,6 +9313,9 @@
       "Eastern Zhou Dynasty",
       "東周朝"
     ],
+    "pinyin": "Dōng Zhōu",
+    "chineseTraditional": "東周",
+    "chineseSimplified": "东周",
     "type": "time period",
     "timePeriod": [
       "Eastern Zhou"
@@ -8745,6 +9334,9 @@
       "Ch`un-ch`iu",
       "Spring and Autumn Period"
     ],
+    "pinyin": "Chūnqiū",
+    "chineseTraditional": "春秋",
+    "chineseSimplified": "春秋",
     "type": "time period",
     "timePeriod": [
       "Spring and Autumn"
@@ -8764,6 +9356,9 @@
       "Chan-kuo",
       "Warring States Period"
     ],
+    "pinyin": "Zhànguó",
+    "chineseTraditional": "戰國",
+    "chineseSimplified": "战国",
     "type": "time period",
     "timePeriod": [
       "Warring States"
@@ -8782,6 +9377,9 @@
       "Zhōnghuá rénmín gònghéguó",
       "Chung-hua jen-min kung-ho-kuo"
     ],
+    "pinyin": "Zhōnghuá rénmín gònghéguó",
+    "chineseTraditional": "中華人民共和國",
+    "chineseSimplified": "中华人民共和国",
     "type": "time period",
     "timePeriod": [
       "People's Republic of China"
@@ -8801,6 +9399,9 @@
       "ti-t'ai",
       "defensive platform (lit. ATTCAT 2022)"
     ],
+    "pinyin": "dítái",
+    "chineseTraditional": "敵臺",
+    "chineseSimplified": "敌台",
     "type": "building type",
     "buildingType": [
       "defensive platform (lit. ATTCAT 2022)"
@@ -8830,6 +9431,9 @@
       "ch'u-chi",
       "verge"
     ],
+    "pinyin": "chūjì",
+    "chineseTraditional": "出際",
+    "chineseSimplified": "出际",
     "type": "architectural feature",
     "architecturalFeature": [
       "verge"
@@ -8880,6 +9484,9 @@
       "edge trim/trimming (lit. ATTCAT 2022)",
       "cutting border"
     ],
+    "pinyin": "jiǎnbiān",
+    "chineseTraditional": "剪邊",
+    "chineseSimplified": "剪边",
     "type": "architectural feature",
     "architecturalFeature": [
       "edge trim/trimming (lit. ATTCAT 2022)"
@@ -8899,6 +9506,9 @@
       "hua-fei",
       "gable-eaves"
     ],
+    "pinyin": "huáfèi",
+    "chineseTraditional": "華廢",
+    "chineseSimplified": "华废",
     "type": "architectural feature",
     "architecturalFeature": [
       "gable-eaves"
@@ -8950,6 +9560,9 @@
       "墪台",
       "mounded platform (lit. ATTCAT 2022 preferred translation)"
     ],
+    "pinyin": "dūntái",
+    "chineseTraditional": "墩臺",
+    "chineseSimplified": "墩台",
     "type": "architectural feature",
     "architecturalFeature": [
       "mounded platform (lit. ATTCAT 2022 preferred translation)"
@@ -9022,6 +9635,9 @@
       "lánkǎn gōuchuāng",
       "lan-k'an kou-ch'uang"
     ],
+    "pinyin": "lánkǎn gōuchuāng",
+    "chineseTraditional": "闌檻鉤窗",
+    "chineseSimplified": "阑槛钩窗",
     "type": "architectural feature",
     "architecturalFeature": [
       "lankan gouchuang"
@@ -9058,6 +9674,9 @@
       "ti-p'eng",
       "raised ground covering (lit. ATTCAT 2022)"
     ],
+    "pinyin": "dìpéng",
+    "chineseTraditional": "地棚",
+    "chineseSimplified": "地棚",
     "type": "building type",
     "buildingType": [
       "raised ground covering (lit. ATTCAT 2022)"
@@ -9076,6 +9695,9 @@
       "fùjiē",
       "fu-chieh"
     ],
+    "pinyin": "fùjiē",
+    "chineseTraditional": "副階",
+    "chineseSimplified": "副阶",
     "type": "architectural feature",
     "architecturalFeature": [
       "fujie"
@@ -9099,6 +9721,9 @@
       "exterior platform",
       "balcony"
     ],
+    "pinyin": "píngzuò",
+    "chineseTraditional": "平坐",
+    "chineseSimplified": "平坐",
     "type": "architectural feature",
     "architecturalFeature": [
       "substructure"
@@ -9128,6 +9753,9 @@
       "memorial gateway (ATTCAT 2022 preferred English)",
       "signboard or plaque-holding commemorative monument"
     ],
+    "pinyin": "páifāng",
+    "chineseTraditional": "牌坊",
+    "chineseSimplified": "牌坊",
     "type": "building type",
     "buildingType": [
       "memorial gateway (ATTCAT 2022 preferred English)"
@@ -9191,6 +9819,9 @@
       "signboard tower (lit. Kroll)",
       "plaque tower (lit. Kroll)"
     ],
+    "pinyin": "páilóu",
+    "chineseTraditional": "牌樓",
+    "chineseSimplified": "牌楼",
     "type": "building type",
     "buildingType": [
       "monumental gateway"
@@ -9220,6 +9851,9 @@
       "ch'ih-tao",
       "expressway (lit., ATTCAT 2022 preferred translation)"
     ],
+    "pinyin": "chídào",
+    "chineseTraditional": "馳道",
+    "chineseSimplified": "驰道",
     "type": "roads and bridges",
     "bridgeOrRoad": [
       "expressway (lit., ATTCAT 2022 preferred translation)"
@@ -9301,6 +9935,9 @@
       "inserted bracket-arm",
       "inserted bracket-arms"
     ],
+    "pinyin": "chāgǒng",
+    "chineseTraditional": "插栱",
+    "chineseSimplified": "插栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "inserted bracket-arm"
@@ -9371,6 +10008,9 @@
       "T-shaped half-bracket",
       "inserted bracket-arm"
     ],
+    "pinyin": "dīngtóugǒng",
+    "chineseTraditional": "丁頭栱",
+    "chineseSimplified": "丁头栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "T-shaped half-bracket"
@@ -9466,6 +10106,9 @@
       "juǎntóu",
       "chüan-t'ou"
     ],
+    "pinyin": "juǎntóu",
+    "chineseTraditional": "卷頭",
+    "chineseSimplified": "卷头",
     "type": "architectural feature",
     "architecturalFeature": [
       "juantou"
@@ -9484,6 +10127,9 @@
       "p`u-p`ai-fang",
       "column top tie beam"
     ],
+    "pinyin": "pǔpāifāng",
+    "chineseTraditional": "普拍枋",
+    "chineseSimplified": "普拍枋",
     "type": "architectural feature",
     "architecturalFeature": [
       "column top tie beam"
@@ -9501,6 +10147,9 @@
       "rénzìgǒng",
       "jen-tzu-kung"
     ],
+    "pinyin": "rénzìgǒng",
+    "chineseTraditional": "人字栱",
+    "chineseSimplified": "人字栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "renzigong"
@@ -9524,6 +10173,9 @@
       "木鼻",
       "kibana"
     ],
+    "pinyin": "shuǎtóu",
+    "chineseTraditional": "耍頭",
+    "chineseSimplified": "耍头",
     "type": "architectural feature",
     "architecturalFeature": [
       "trifling head"
@@ -9611,6 +10263,9 @@
       "miǎogǒng",
       "miao-kung"
     ],
+    "pinyin": "miǎogǒng",
+    "chineseTraditional": "杪栱",
+    "chineseSimplified": "杪栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "miaogong"
@@ -9628,6 +10283,9 @@
       "chāogǒng",
       "ch'ao-kung"
     ],
+    "pinyin": "chāogǒng",
+    "chineseTraditional": "抄栱",
+    "chineseSimplified": "抄栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "chaogong"
@@ -9648,6 +10306,9 @@
       "raise and depress (lit.)",
       "sloping and folding the roof"
     ],
+    "pinyin": "jǔzhé",
+    "chineseTraditional": "舉折",
+    "chineseSimplified": "举折",
     "type": "architectural feature",
     "architecturalFeature": [
       "raise and depress (lit.)"
@@ -9670,6 +10331,9 @@
       "raising the frame or raising the truss",
       "lifting the purlins"
     ],
+    "pinyin": "jǔjià",
+    "chineseTraditional": "舉架",
+    "chineseSimplified": "举架",
     "type": "architectural feature",
     "architecturalFeature": [
       "To raise and build up (lit.)"
@@ -9721,6 +10385,9 @@
       "píngbǎnfāng",
       "p'ing-pan-fang"
     ],
+    "pinyin": "píngbǎnfāng",
+    "chineseTraditional": "平板枋",
+    "chineseSimplified": "平板枋",
     "type": "architectural feature",
     "architecturalFeature": [
       "pingbanfang"
@@ -9802,6 +10469,9 @@
       "yang-ma-ch'iang",
       "goat and horse wall (lit.)"
     ],
+    "pinyin": "yángmǎqiáng",
+    "chineseTraditional": "羊馬牆",
+    "chineseSimplified": "羊马墙",
     "type": "architectural feature",
     "architecturalFeature": [
       "goat and horse wall (lit.)"
@@ -9834,6 +10504,9 @@
       "rockery",
       "rockwork"
     ],
+    "pinyin": "jiǎshān",
+    "chineseTraditional": "假山",
+    "chineseSimplified": "假山",
     "type": "building type",
     "buildingType": [
       "pretend mountain (lit.)"
@@ -9851,6 +10524,9 @@
       "cūn",
       "ts'un"
     ],
+    "pinyin": "cūn",
+    "chineseTraditional": "村",
+    "chineseSimplified": "村",
     "type": "site type",
     "siteType": [
       "cun"
@@ -9883,6 +10559,9 @@
       "xiāng",
       "hsiang"
     ],
+    "pinyin": "xiāng",
+    "chineseTraditional": "鄉",
+    "chineseSimplified": "乡",
     "type": "site type",
     "siteType": [
       "xiang"
@@ -9923,6 +10602,9 @@
       "zhèn",
       "chen"
     ],
+    "pinyin": "zhèn",
+    "chineseTraditional": "鎮",
+    "chineseSimplified": "镇",
     "type": "site type",
     "siteType": [
       "zhen"
@@ -9961,6 +10643,9 @@
       "minor carpentry",
       "lesser carpentry"
     ],
+    "pinyin": "xiǎomùzuò",
+    "chineseTraditional": "小木作",
+    "chineseSimplified": "小木作",
     "type": "architectural feature",
     "architecturalFeature": [
       "small woodwork (lit. ATTCAT 2022)"
@@ -9989,6 +10674,9 @@
       "jì",
       "chi"
     ],
+    "pinyin": "jì",
+    "chineseTraditional": "際",
+    "chineseSimplified": "际",
     "type": "architectural feature",
     "architecturalFeature": [
       "ji"
@@ -10013,6 +10701,9 @@
       "pū",
       "p'u"
     ],
+    "pinyin": "pū",
+    "chineseTraditional": "鋪",
+    "chineseSimplified": "铺",
     "type": "architectural feature",
     "architecturalFeature": [
       "pu"
@@ -10064,6 +10755,9 @@
       "péng",
       "p'eng"
     ],
+    "pinyin": "péng",
+    "chineseTraditional": "棚",
+    "chineseSimplified": "棚",
     "type": "building type",
     "buildingType": [
       "peng"
@@ -10082,6 +10776,9 @@
       "jiē",
       "chieh"
     ],
+    "pinyin": "jiē",
+    "chineseTraditional": "階",
+    "chineseSimplified": "阶",
     "type": "architectural feature",
     "architecturalFeature": [
       "jie"
@@ -10114,6 +10811,9 @@
       "tso",
       "seat (ATTCAT preferred)"
     ],
+    "pinyin": "zuò",
+    "chineseTraditional": "坐",
+    "chineseSimplified": "坐",
     "type": "architectural feature",
     "architecturalFeature": [
       "seat (ATTCAT preferred)"
@@ -10137,6 +10837,9 @@
       "dào",
       "tao"
     ],
+    "pinyin": "dào",
+    "chineseTraditional": "道",
+    "chineseSimplified": "道",
     "type": "roads and bridges",
     "bridgeOrRoad": [
       "dao"
@@ -10164,6 +10867,9 @@
       "gōudī",
       "kou-ti"
     ],
+    "pinyin": "gōudī",
+    "chineseTraditional": "勾滴",
+    "chineseSimplified": "勾滴",
     "type": "architectural feature",
     "architecturalFeature": [
       "goudi"
@@ -10191,6 +10897,9 @@
       "páishān gōudī",
       "p'ai-shan kou-ti"
     ],
+    "pinyin": "páishān gōudī",
+    "chineseTraditional": "排山勾滴",
+    "chineseSimplified": "排山勾滴",
     "type": "architectural feature",
     "architecturalFeature": [
       "paishan goudi"
@@ -10256,6 +10965,9 @@
       "i-hsing-kung",
       "irregularly-shaped bracket arm"
     ],
+    "pinyin": "yìxínggǒng",
+    "chineseTraditional": "異形栱",
+    "chineseSimplified": "异形栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "irregularly-shaped bracket arm"
@@ -10323,6 +11035,9 @@
       "dīshuǐ",
       "ti-shui"
     ],
+    "pinyin": "dīshuǐ",
+    "chineseTraditional": "滴水",
+    "chineseSimplified": "滴水",
     "type": "architectural feature",
     "architecturalFeature": [
       "dishui"
@@ -10351,6 +11066,9 @@
       "záoruì",
       "tsao-jui"
     ],
+    "pinyin": "záoruì",
+    "chineseTraditional": "鑿枘",
+    "chineseSimplified": "凿枘",
     "type": "architectural feature",
     "architecturalFeature": [
       "zaorui"
@@ -10369,6 +11087,9 @@
       "t'ien-hua",
       "ceiling"
     ],
+    "pinyin": "tiānhuā",
+    "chineseTraditional": "天花",
+    "chineseSimplified": "天花",
     "type": "architectural feature",
     "architecturalFeature": [
       "ceiling"
@@ -10451,6 +11172,9 @@
       "flat, coffered ceiling using smaller grids",
       "plain lattice ceiling"
     ],
+    "pinyin": "píng'àn",
+    "chineseTraditional": "平闇",
+    "chineseSimplified": "平暗",
     "type": "architectural feature",
     "architecturalFeature": [
       "flat, coffered ceiling using smaller grids"
@@ -10489,6 +11213,9 @@
       "chessboard ceiling",
       "decorated lattice ceiling"
     ],
+    "pinyin": "píngqí",
+    "chineseTraditional": "平棊",
+    "chineseSimplified": "平棊",
     "type": "architectural feature",
     "architecturalFeature": [
       "flat, coffered ceiling using grids lager than ping'an"
@@ -10520,6 +11247,9 @@
       "guard station (ATTCAT preferred translation)",
       "guard house"
     ],
+    "pinyin": "wōpù",
+    "chineseTraditional": "窩鋪",
+    "chineseSimplified": "窝铺",
     "type": "building type",
     "buildingType": [
       "guard station (ATTCAT preferred translation)"
@@ -10579,6 +11309,9 @@
       "dǒukē",
       "tou-k'o"
     ],
+    "pinyin": "dǒukē",
+    "chineseTraditional": "斗科",
+    "chineseSimplified": "斗科",
     "type": "architectural feature",
     "architecturalFeature": [
       "douke"
@@ -10638,6 +11371,9 @@
       "liūjīn dǒukē",
       "liu-chin tou-k'o"
     ],
+    "pinyin": "liūjīn dǒukē",
+    "chineseTraditional": "溜金斗科",
+    "chineseSimplified": "溜金斗科",
     "type": "architectural feature",
     "architecturalFeature": [
       "liujin douke"
@@ -10739,6 +11475,9 @@
       "inserted bracket-arm",
       "inserted bracket-arms"
     ],
+    "pinyin": "tiāojīn dǒukē",
+    "chineseTraditional": "挑金斗科",
+    "chineseSimplified": "挑金斗科",
     "type": "architectural feature",
     "architecturalFeature": [
       "inserted bracket-arm"
@@ -10806,6 +11545,9 @@
       "tīaojīn",
       "t'iao-chin"
     ],
+    "pinyin": "tīaojīn",
+    "chineseTraditional": "挑金",
+    "chineseSimplified": "挑金",
     "type": "architectural feature",
     "architecturalFeature": [
       "tiaojin"
@@ -10829,6 +11571,9 @@
       "liūjīn",
       "liu-chin"
     ],
+    "pinyin": "liūjīn",
+    "chineseTraditional": "溜金",
+    "chineseSimplified": "溜金",
     "type": "architectural feature",
     "architecturalFeature": [
       "liujin"
@@ -10853,6 +11598,9 @@
       "dòngliáng",
       "tung-liang"
     ],
+    "pinyin": "dòngliáng",
+    "chineseTraditional": "棟梁",
+    "chineseSimplified": "栋梁",
     "type": "architectural feature",
     "architecturalFeature": [
       "dongliang"
@@ -10880,6 +11628,9 @@
       "jìa",
       "chia"
     ],
+    "pinyin": "jìa",
+    "chineseTraditional": "架",
+    "chineseSimplified": "架",
     "type": "architectural feature",
     "architecturalFeature": [
       "jia"
@@ -10899,6 +11650,9 @@
       "tsung-chia",
       "lengthwise framework"
     ],
+    "pinyin": "zòngjià",
+    "chineseTraditional": "縱架",
+    "chineseSimplified": "纵架",
     "type": "architectural feature",
     "architecturalFeature": [
       "lengthwise framework"
@@ -10923,6 +11677,9 @@
       "héngjià",
       "heng-chia"
     ],
+    "pinyin": "héngjià",
+    "chineseTraditional": "橫架",
+    "chineseSimplified": "横架",
     "type": "architectural feature",
     "architecturalFeature": [
       "hengjia"
@@ -10948,6 +11705,9 @@
       "tan-kung",
       "single arms (lit. ATTCAT 2023)"
     ],
+    "pinyin": "dāngǒng",
+    "chineseTraditional": "單栱",
+    "chineseSimplified": "单栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "single arms (lit. ATTCAT 2023)"
@@ -11008,6 +11768,9 @@
       "chung-kung",
       "ch'ung-kung"
     ],
+    "pinyin": "chónggǒng",
+    "chineseTraditional": "重栱",
+    "chineseSimplified": "重栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "chonggong"
@@ -11109,6 +11872,9 @@
       "step",
       "jump"
     ],
+    "pinyin": "tiào",
+    "chineseTraditional": "跳",
+    "chineseSimplified": "跳",
     "type": "architectural feature",
     "architecturalFeature": [
       "step"
@@ -11149,6 +11915,9 @@
       "kua-tzu-kung",
       "guazi gong"
     ],
+    "pinyin": "guāzǐgǒng",
+    "chineseTraditional": "瓜子栱",
+    "chineseSimplified": "瓜子栱",
     "type": "architectural feature",
     "architecturalFeature": [
       "guazigong"
@@ -11235,6 +12004,9 @@
       "valance",
       "canopied couch"
     ],
+    "pinyin": "zhàng",
+    "chineseTraditional": "帳",
+    "chineseSimplified": "帐",
     "type": "architectural feature",
     "architecturalFeature": [
       "valance"
@@ -11256,6 +12028,9 @@
       "rake head intertwined-neck structure",
       "bǎ tóu jiǎo xiàng zuò"
     ],
+    "pinyin": "bǎtóu jiǎoxiàngzuò",
+    "chineseTraditional": "把頭絞項作",
+    "chineseSimplified": "把头绞项作",
     "type": "architectural feature",
     "architecturalFeature": [
       "ba/patou jiaoxiang"
@@ -11346,6 +12121,9 @@
       "jumping at the mouth of the cap block",
       "block-mouth tier"
     ],
+    "pinyin": "dǒukǒutiào",
+    "chineseTraditional": "枓口跳",
+    "chineseSimplified": "斗口跳",
     "type": "architectural feature",
     "architecturalFeature": [
       "jumping at the mouth of the cap block"
@@ -11402,6 +12180,9 @@
       "dāndǒu zhītì",
       "tan-tou chih-t'i"
     ],
+    "pinyin": "dāndǒu zhītì",
+    "chineseTraditional": "單枓隻替",
+    "chineseSimplified": "单斗只替",
     "type": "architectural feature",
     "architecturalFeature": [
       "dandou zhiti"
@@ -11454,6 +12235,9 @@
       "xiāng",
       "hsiang"
     ],
+    "pinyin": "xiāng",
+    "chineseTraditional": "廂",
+    "chineseSimplified": "厢",
     "type": "building type",
     "buildingType": [
       "xiang"
@@ -11472,6 +12256,9 @@
       "dāngǒngzào",
       "tan-kung-tsao"
     ],
+    "pinyin": "dāngǒngzào",
+    "chineseTraditional": "單栱造",
+    "chineseSimplified": "单栱造",
     "type": "architectural feature",
     "architecturalFeature": [
       "dangongzao"
@@ -11520,6 +12307,9 @@
       "sun-mao",
       "mortise-and-tenon joinery"
     ],
+    "pinyin": "sǔnmǎo",
+    "chineseTraditional": "榫卯",
+    "chineseSimplified": "榫卯",
     "type": "architectural feature",
     "architecturalFeature": [
       "mortise-and-tenon joinery"
