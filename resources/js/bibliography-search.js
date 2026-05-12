@@ -2,17 +2,42 @@ let searchData = [];
 let allResults = [];
 let currentPage = 1;
 const perPage = 20;
+let dataLoaded = false;
+let currentSort = 'author'; // default sort key
+
+function getSortLabel(key) {
+  switch (key) {
+    case 'title':
+      return 'Title';
+    case 'author':
+      return 'Author';
+    case 'date':
+      return 'Publication date';
+    case 'publicationPlace':
+      return 'Publication place';
+    default:
+      return 'Author';
+  }
+}
 
 // Load bibliography data on page load
 fetch('/json/bibliography-combined.json')
   .then(response => response.json())
   .then(data => { 
     searchData = data;
+    allResults = data; // Display all results initially
+    dataLoaded = true;
     console.log(`Loaded ${data.length} bibliography records`);
+    // If DOM is already ready, display results now; otherwise DOMContentLoaded handler will display them
+    if (document.readyState !== 'loading') {
+      sortRecords(currentSort);
+      displayResults(1);
+    }
   })
   .catch(error => {
     console.error('Error loading bibliography data:', error);
   });
+
 
 /**
  * Perform a search across specified fields or all fields
@@ -61,19 +86,34 @@ function displayResults(page = 1) {
   const spinner = document.getElementById('searchSpinner');
   if (spinner) spinner.style.display = 'none';
   
-  if (allResults.length === 0) {
+  const visibleResults = allResults.filter(hasDisplayTitle);
+
+  if (visibleResults.length === 0) {
     resultsPanel.innerHTML = '<div class="alert alert-info" style="margin: 2em 0;"><p>No results found. Try adjusting your search criteria.</p></div>';
     return;
   }
   
   const start = (page - 1) * perPage;
   const end = start + perPage;
-  const pageResults = allResults.slice(start, end);
-  const totalPages = Math.ceil(allResults.length / perPage);
+  const pageResults = visibleResults.slice(start, end);
+  const totalPages = Math.ceil(visibleResults.length / perPage);
   
   // Build result summary and pagination
   let html = `<div style="margin: 1em 0; padding: 1em; background-color: #f9f9f9; border-left: 4px solid #007bff;">
-    <p style="margin: 0;"><strong>Found ${allResults.length} result${allResults.length !== 1 ? 's' : ''}</strong> (showing ${start + 1}-${Math.min(end, allResults.length)})</p>`;
+    <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1em;">
+      <p style="margin: 0;"><strong>Found ${visibleResults.length} result${visibleResults.length !== 1 ? 's' : ''}</strong> (showing ${start + 1}-${Math.min(end, visibleResults.length)})</p>
+      <div class="dropdown" style="display:inline-block;">
+        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="biblSortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sort: ${escapeHtml(getSortLabel(currentSort))} <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="biblSortDropdown">
+          <li><a href="#" data-sort-key="title">Title</a></li>
+          <li><a href="#" data-sort-key="author">Author</a></li>
+          <li><a href="#" data-sort-key="date">Publication date</a></li>
+          <li><a href="#" data-sort-key="publicationPlace">Publication place</a></li>
+        </ul>
+      </div>
+    </div>`;
   
   // Pagination controls
   if (totalPages > 1) {
@@ -94,8 +134,9 @@ function displayResults(page = 1) {
     html += '</div>';
   }
   html += '</div>';
-  
-  // Build individual result cards
+
+  // Build individual result cards (inside same container)
+  html += '<div style="padding-top:0.75em;">';
   html += pageResults.map(entry => {
     const titleText = (entry.title && Array.isArray(entry.title) ? entry.title[0] : entry.title) || 'Untitled';
     const authors = Array.isArray(entry.author) ? entry.author.join('; ') : (entry.author || '');
@@ -126,8 +167,21 @@ function displayResults(page = 1) {
       </div>
     `;
   }).join('');
-  
+  html += '</div>';
+  html += '</div>';
+
   resultsPanel.innerHTML = html;
+  // wire up sort dropdown after rendering
+  const sortMenu = resultsPanel.querySelectorAll('[data-sort-key]');
+  sortMenu.forEach(item => {
+    item.addEventListener('click', event => {
+      event.preventDefault();
+      currentSort = item.getAttribute('data-sort-key') || 'author';
+      sortRecords(currentSort);
+      currentPage = 1;
+      displayResults(1);
+    });
+  });
 }
 
 /**
@@ -154,6 +208,14 @@ function escapeHtml(text) {
   const div = document.createElement('div');
   div.textContent = text;
   return div.innerHTML;
+}
+
+function hasDisplayTitle(entry) {
+  const title = entry && entry.title;
+  if (Array.isArray(title)) {
+    return title.some(item => String(item || '').trim().length > 0);
+  }
+  return String(title || '').trim().length > 0;
 }
 
 /**
@@ -216,6 +278,8 @@ function executeSearch(e) {
   
   if (hasInput) {
     allResults = combinedResults;
+    // apply current sort to the filtered results
+    sortRecords(currentSort);
     currentPage = 1;
     displayResults(1);
   } else {
@@ -235,7 +299,53 @@ document.addEventListener('DOMContentLoaded', function() {
   const searchForm = document.querySelector('form[action="bibliography.html"]');
   if (searchForm) {
     searchForm.addEventListener('submit', executeSearch);
+    // Handle form reset to show all results
+    searchForm.addEventListener('reset', function() {
+      window.setTimeout(() => {
+        allResults = searchData;
+        currentPage = 1;
+        // reapply sort when reset
+        sortRecords(currentSort);
+        displayResults(1);
+      }, 0);
+    });
+    // If data already loaded, render initial results now
+    if (dataLoaded) {
+      sortRecords(currentSort);
+      displayResults(1);
+    }
   } else {
     console.warn('Bibliography search form not found');
   }
 });
+
+/**
+ * Return a string value for sorting based on key
+ */
+function getSortValue(entry, key) {
+  if (!entry) return '';
+  switch (key) {
+    case 'title':
+      return (Array.isArray(entry.title) ? entry.title[0] : (entry.title || '')) || '';
+    case 'author':
+      return (Array.isArray(entry.author) ? entry.author[0] : (entry.author || '')) || '';
+    case 'date':
+      return (Array.isArray(entry.date) ? entry.date[0] : (entry.date || '')) || '';
+    case 'publicationPlace':
+      return (Array.isArray(entry.publicationPlace) ? entry.publicationPlace[0] : (entry.publicationPlace || '')) || '';
+    default:
+      return '';
+  }
+}
+
+/**
+ * Sort the `allResults` array in-place by the given key.
+ */
+function sortRecords(key) {
+  if (!key) return;
+  allResults.sort((a, b) => {
+    const va = String(getSortValue(a, key) || '').toLowerCase();
+    const vb = String(getSortValue(b, key) || '').toLowerCase();
+    return va.localeCompare(vb, 'en', { sensitivity: 'base' });
+  });
+}
