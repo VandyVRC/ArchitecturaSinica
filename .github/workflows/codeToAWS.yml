@@ -39,7 +39,7 @@ jobs:
 
       - name: Sync all files to S3
         run: |
-          aws s3 sync ./ s3://${AWS_S3_BUCKET}/ --exact-timestamps --exclude ".gitignore" --exclude ".gitattributes" --exclude ".git/*" --exclude ".github/*" --exclude "tests/*" --exclude "siteGenerator/*" --exclude ".DS_Store" --exclude "build/*"
+          aws s3 sync ./ s3://${AWS_S3_BUCKET}/ --exact-timestamps --exclude ".gitignore" --exclude "infrastructure" --exclude ".git/*" --exclude ".github/*" --exclude "tests/*" --exclude "siteGenerator/*" --exclude ".DS_Store" 
         env:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
