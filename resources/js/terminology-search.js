@@ -41,6 +41,49 @@ function getEntryTypeLabel(type) {
   return type ? String(type) : 'uncategorized';
 }
 
+function extractPinyin(entry) {
+  // extract pinyin with diacritics for sorting
+  const kw = Array.isArray(entry.keyword) ? entry.keyword : [];
+  const pinyinRx = /[āáǎàēéěèīíǐìōóǒòūúǔùüǘǚǜńňǎǹǒǎ]/i;
+
+  for (let i = 0; i < kw.length; i += 1) {
+    const v = String(kw[i] || '');
+    if (pinyinRx.test(v)) return v;
+  }
+  // fallback to index 3 (common pinyin position)
+  if (kw[3]) return String(kw[3]);
+  return '';
+}
+
+function formatEntryLabel(entry) {
+  // prefer pinyin with diacritics and Chinese characters
+  const kw = Array.isArray(entry.keyword) ? entry.keyword : [];
+  // regex to detect pinyin with diacritics
+  const pinyinRx = /[āáǎàēéěèīíǐìōóǒòūúǔùüǘǚǜńňǎǹǒǎ]/i;
+  const chineseRx = /[\u4E00-\u9FFF]/;
+
+  let pinyin = '';
+  let chinese = '';
+
+  for (let i = 0; i < kw.length; i += 1) {
+    const v = String(kw[i] || '');
+    if (!pinyin && pinyinRx.test(v)) pinyin = v;
+    if (!chinese && chineseRx.test(v)) chinese = v;
+    if (pinyin && chinese) break;
+  }
+
+  // fallbacks: common positions used in the data
+  if (!pinyin && kw[3]) pinyin = String(kw[3]);
+  if (!chinese && kw[1]) chinese = String(kw[1]);
+
+  // final fallback to first available label
+  const fallback = kw[0] || entry.displayTitleEnglish || entry.id || '';
+  const parts = [];
+  if (pinyin) parts.push(pinyin);
+  if (chinese) parts.push(chinese);
+  if (parts.length === 0 && fallback) parts.push(fallback);
+  return parts.join(' ');
+}
 function recordMatchesQuery(entry, query, fields = 'all') {
   if (!query) return true;
   const lowerQuery = normalizeText(query);
@@ -151,6 +194,13 @@ function applyFilters() {
       baseResults = baseResults.filter(entry => normalizeText(entry.type) === normalizeText(activeFacet));
     }
   }
+
+  // Sort alphabetically by pinyin
+  baseResults.sort((a, b) => {
+    const pinyinA = extractPinyin(a).toLowerCase();
+    const pinyinB = extractPinyin(b).toLowerCase();
+    return pinyinA.localeCompare(pinyinB, 'en', { sensitivity: 'base' });
+  });
 
   return baseResults;
 }
@@ -281,7 +331,7 @@ function renderResults() {
         </div>
         <div style="flex:1;">
           <div style="font-size:1.05em; line-height:1.35; margin-bottom:0.15em;">
-            <a href="${entry.idno || '#'}" target="_blank" rel="noopener">${escapeHtml(getEntryTitle(entry))}</a>
+            <a href="${entry.idno || '#'}" target="_blank" rel="noopener">${escapeHtml(formatEntryLabel(entry))}</a>
             <span style="color:#666;"> (${escapeHtml(getEntryTypeLabel(entry.type))})</span>
           </div>
           ${keywordSummary ? `<div style="color:#666; font-size:0.95em;">${escapeHtml(keywordSummary)}</div>` : ''}

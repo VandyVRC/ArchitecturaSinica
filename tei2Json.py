@@ -366,6 +366,27 @@ def terminology_to_json(filepath: Path, root_input: Path | None = None) -> dict 
         text_content(t) for t in entry.findall("tei:term[@xml:lang='en']", NS)
     ] + terms)
 
+    # Preferential extraction of pinyin and Chinese forms when available
+    pinyin_terms = language_texts(entry, ".//tei:term", "zh-latn-pinyin")
+    chinese_traditional_terms = language_texts(entry, ".//tei:term", "zh-Hant")
+    chinese_simplified_terms = language_texts(entry, ".//tei:term", "zh-Hans")
+    pinyin_value = first_nonempty(pinyin_terms)
+    chinese_traditional_value = first_nonempty(chinese_traditional_terms)
+    chinese_simplified_value = first_nonempty(chinese_simplified_terms)
+
+    # Ensure the keyword list contains these canonical forms (but keep original order otherwise)
+    canonical_terms = []
+    # keep original terms first
+    canonical_terms.extend(terms)
+    # add pinyin and chinese variants if missing
+    if pinyin_value and pinyin_value not in canonical_terms:
+        canonical_terms.append(pinyin_value)
+    if chinese_traditional_value and chinese_traditional_value not in canonical_terms:
+        canonical_terms.append(chinese_traditional_value)
+    if chinese_simplified_value and chinese_simplified_value not in canonical_terms:
+        canonical_terms.append(chinese_simplified_value)
+    terms = unique_keep_order(canonical_terms)
+
     idno = text_content(entry.find("tei:idno[@type='URI']", NS))
     kid = idno.rsplit("/", 1)[-1] if idno else filepath.stem
 
@@ -402,6 +423,9 @@ def terminology_to_json(filepath: Path, root_input: Path | None = None) -> dict 
         "idno": idno,
         "displayTitleEnglish": display,
         "keyword": terms,
+        "pinyin": pinyin_value,
+        "chineseTraditional": chinese_traditional_value,
+        "chineseSimplified": chinese_simplified_value,
         "type": raw_type,
         "architecturalFeature": architectural_feature,
         "timePeriod": time_period,
