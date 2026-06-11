@@ -212,12 +212,12 @@ function renderFacets(entries) {
   const facetCounts = buildFacetCounts(entries);
   const labels = getFacetLabels();
 
-  let html = '<div class="facet-display"><div style="margin-bottom:0.5em;"><h3 style="margin-top:0;">SEARCH CATEGORY</h3></div><div style="border-top:2px solid #444; padding-top:0.75em;">';
-  html += `<button type="button" class="btn btn-link facet-link${activeFacet === 'all' ? ' active' : ''}" data-facet="all" style="display:block; width:100%; text-align:left; padding:0.5em 0;">${labels.all}</button>`;
+  let html = '<div class="facet-display facet-grp"><div class="facet-title" style="color: white !important; border-bottom-color:white;">SEARCH CATEGORY</div><div class="facet-list">';
+  html += `<button type="button" class="btn btn-link facet-label facet-link${activeFacet === 'all' ? ' active' : ''}" data-facet="all" >${labels.all}</button>`;
   facetCounts.forEach(facet => {
     const isActive = normalizeText(activeFacet) === normalizeText(facet.type) || activeFacet.startsWith(facet.type + '::');
     html += `<div style="margin-bottom:0.25em;">`;
-    html += `<button type="button" class="btn btn-link facet-link${isActive ? ' active' : ''}" data-facet="${escapeHtml(facet.type)}" style="display:block; width:100%; text-align:left; padding:0.5em 0;">${escapeHtml(labels[facet.type] || facet.type)} (${facet.count})</button>`;
+    html += `<button type="button" class="btn btn-link facet-label facet-link${isActive ? ' active' : ''}" data-facet="${escapeHtml(facet.type)}">${escapeHtml(labels[facet.type] || facet.type)} (${facet.count})</button>`;
 
     // If this is the architectural feature main facet, render subcategories
     if (normalizeText(facet.type) === 'architectural feature') {
@@ -225,10 +225,10 @@ function renderFacets(entries) {
       if (subFacets.length || isActive) {
         html += '<div style="margin-left:0.75em; padding-left:0.5em; border-left:2px solid #eee; margin-top:0.25em;">';
         const subViewAllActive = activeFacet === `${facet.type}::all` || normalizeText(activeFacet) === normalizeText(facet.type);
-        html += `<button type="button" class="btn btn-link subfacet-link${subViewAllActive ? ' active' : ''}" data-facet-main="${escapeHtml(facet.type)}" data-subfacet="all" style="display:block; width:100%; text-align:left; padding:0.25em 0;">View all</button>`;
+        html += `<button type="button" class="btn btn-link facet-label subfacet-link${subViewAllActive ? ' active' : ''}" data-facet-main="${escapeHtml(facet.type)}" data-subfacet="all">View all</button>`;
         subFacets.forEach(sf => {
           const subActive = activeFacet === `${facet.type}::${sf.key}`;
-          html += `<button type="button" class="btn btn-link subfacet-link${subActive ? ' active' : ''}" data-facet-main="${escapeHtml(facet.type)}" data-subfacet="${escapeHtml(sf.key)}" style="display:block; width:100%; text-align:left; padding:0.25em 0;">${escapeHtml(sf.term)} (${sf.count})</button>`;
+          html += `<button type="button" class="btn btn-link facet-label subfacet-link${subActive ? ' active' : ''}" data-facet-main="${escapeHtml(facet.type)}" data-subfacet="${escapeHtml(sf.key)}">${escapeHtml(sf.term)} (${sf.count})</button>`;
         });
         html += '</div>';
       }
@@ -294,14 +294,7 @@ function renderResults() {
 
   if (!document.getElementById('terminology-facets') || !document.getElementById('terminology-hits')) {
     resultsPanel.innerHTML = `
-      <div class="row">
-        <div class="col-md-4">
-          <div id="terminology-facets"></div>
-        </div>
-        <div class="col-md-8">
-          <div id="terminology-hits"></div>
-        </div>
-      </div>`;
+      <div id="terminology-hits"></div>`;
   }
 
   renderFacets(filteredData);

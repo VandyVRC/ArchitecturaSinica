@@ -427,27 +427,8 @@
                     <xsl:otherwise><xsl:message>No template found for html:head element</xsl:message></xsl:otherwise>
                 </xsl:choose>
             <body id="body">
-                <xsl:choose>
-                    <xsl:when test="not(empty($template))">
-                        <xsl:choose>
-                            <!-- div class="navbar -->
-                            <xsl:when test="$template/descendant::html:div[@id='navbar']">
-                                <xsl:copy-of select="$template/descendant::html:div[@id='navbar']"/>
-                            </xsl:when>
-                            <xsl:when test="$template/descendant::html:nav">
-                                <xsl:copy-of select="$template/descendant::html:nav"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:message>No template found for html:head element 1</xsl:message>
-                                <xsl:call-template name="genericNav"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:message>No template found for html:head element 2</xsl:message>
-                        <xsl:call-template name="genericNav"/>
-                    </xsl:otherwise>
-                </xsl:choose>
+                <script src="resources/js/navbar-search.js"></script>
+                <div id="navbar-container"></div>
                 <xsl:choose>
                     <xsl:when test="$pageType = 'HTML'">
                         <xsl:copy-of select="$nodes"/>

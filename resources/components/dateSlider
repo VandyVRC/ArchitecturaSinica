@@ -1,0 +1,112 @@
+// components/Bibliography/DateRangeSlider.tsx
+import React, { useRef, useState, useEffect } from 'react';
+import './dateRangeSlider.css';
+
+interface DateRangeSliderProps {
+  min: number;
+  max: number;
+  value: [number, number];
+  onChange: (range: [number, number]) => void;
+  onReset?: () => void;
+}
+
+const DateRangeSlider: React.FC<DateRangeSliderProps> = ({
+  min,
+  max,
+  value,
+  onChange,
+  onReset
+}) => {
+  const [dragging, setDragging] = useState<null | 'min' | 'max'>(null);
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  const [start, end] = value;
+
+  const positionToYear = (clientX: number): number => {
+    const slider = sliderRef.current;
+    if (!slider) return min;
+    const rect = slider.getBoundingClientRect();
+    const percent = Math.min(Math.max((clientX - rect.left) / rect.width, 0), 1);
+    const rawYear = Math.round(min + percent * (max - min));
+    return Math.min(Math.max(rawYear, min), max);
+  };
+
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!dragging) return;
+    const year = positionToYear(e.clientX);
+    if (dragging === 'min') {
+      if (year <= end) onChange([year, end]);
+    } else if (dragging === 'max') {
+      if (year >= start) onChange([start, year]);
+    }
+  };
+
+  const stopDragging = () => setDragging(null);
+
+  useEffect(() => {
+    if (dragging) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', stopDragging);
+    }
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', stopDragging);
+    };
+  }, [dragging]);
+
+  const percent = (year: number) => ((year - min) / (max - min)) * 100;
+
+  return (
+    <div className="date-slider-block">
+      <label className="date-slider-label">Filter by Date Range</label>
+      <div className="slider-inputs">
+        <input
+          type="number"
+          value={start}
+          min={min}
+          max={end}
+          onChange={e => onChange([Math.min(Number(e.target.value), end), end])}
+          className="slider-year-input"
+        />
+        <span className="slider-separator">to</span>
+        <input
+          type="number"
+          value={end}
+          min={start}
+          max={max}
+          onChange={e => onChange([start, Math.max(Number(e.target.value), start)])}
+          className="slider-year-input"
+        />
+      </div>
+
+      <div className="slider-bar" ref={sliderRef}>
+        <div className="slider-bar-background" />
+        <div
+          className="slider-bar-active"
+          style={{
+            left: `${percent(start)}%`,
+            width: `${percent(end) - percent(start)}%`
+          }}
+        />
+        <div
+          className="slider-thumb left-thumb"
+          style={{ left: `${percent(start)}%` }}
+          onMouseDown={() => setDragging('min')}
+        />
+        <div
+          className="slider-thumb right-thumb"
+          style={{ left: `${percent(end)}%` }}
+          onMouseDown={() => setDragging('max')}
+        />
+      </div>
+
+      {onReset && (
+        <button className="slider-reset-button" onClick={() => onReset()}>
+          Reset Date Filter
+        </button>
+      )}
+    </div>
+  );
+};
+
+export default DateRangeSlider;
