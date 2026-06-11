@@ -63,217 +63,246 @@
         </script>
       </head>
    <body id="body">
-      <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-         
-         <div>
-            
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  </button>
-               <a class="navbar-brand banner-container" href="/index.html">
-                  <span>Architectura Sinica</span>
-                  </a>
-               
-            </div>
-            
-            <div class="navbar-collapse collapse pull-right">
-               
-               <ul class="nav navbar-nav sm sm-vertical" id="main-menu">
-                  
-                  <li>
-                     <a href="/research-tool.html"> DYNAMIC SITE ARCHIVE </a>
-                     
-                  </li>
-                  
-                  <li>
-                     <a href="/terminology.html"> ARCHITECTURAL TERMINOLOGY </a>
-                     
-                  </li>
-                  
-                  <li>
-                     <a href="/bibliography.html"> BIBLIOGRAPHY </a>
-                     
-                  </li>
-                  
-                  <li>
-                     <a href="/about.html"> ABOUT </a>
-                     
-                  </li>
-                  
-               </ul>
-               
-               <form class="navbar-form navbar-left navbar-input-group" role="search" action="/search.html" method="get">
-                  
-                  <div class="input-group">
-                     <input type="text" class="form-control keyboard" placeholder="search" name="q" id="q" />
-                     
-                     <div class="input-group-btn">
-                        
-                     </div>
-                     <!-- /btn-group -->
-                     
-                  </div>
-                  <button type="submit" class="btn btn-default">
-                     <span class="glyphicon glyphicon-search"></span>
-                     </button>
-                  
-               </form>
-               
-            </div>
-            <!--/.nav-collapse -->
-            
-         </div>
-         
-      </div>
-      <div xmlns:xi="http://www.w3.org/2001/XInclude" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
-         
-         <div class="padding-top">   
-            
-            <div data-template="search:search-data" data-template-collection="bibl" data-template-sort-element="author">
-               
-               <form method="get" action="bibliography.html" class="center-block form-horizontal indent" role="form" style="margin:0; padding:2em 1em; background-color:#F7F7F9;">  
-                  
-                  <h1 class="search-header indent">Architectura Sinica Bibliography
-                      <small class="pull-right" style="margin-right:2em;">
-                        (<a class="togglelink text-info" data-toggle="collapse" data-target="#showSearch" href="#showSearch" data-text-swap="+ Show"> - Hide </a>)
-                        </small>
-                     
-                  </h1>
-                  
-                  <div class="row collapse in" id="showSearch">
-                     
-                     <div class="col-md-7 col-sm-offset-1">
-                        
-                        <!-- Keyword -->
-                        
+      <script src="resources/js/navbar-search.js"></script>
+      <div id="navbar-container"></div>
+      <div class="padding-top" style="padding:0; margin-left:-25px;">
+         <div class="row">
+            <div class="col-md-4" >
+               <div class="sidebar" style="background-color: #702020; height: 100vh; position: fixed; color: white; padding-top:75px;">
+                  <h1 class="terminology-title" style="color: white; font-size: 28px; margin-bottom: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Bibliography</h1>
+                  <!-- Search Form -->
+                  <div class="search-container" style="margin-bottom: 30px;">
+                     <form method="get" action="bibliography.html" role="form">
                         <div class="form-group">
-                           <label for="q" class="col-sm-2 col-md-3  control-label">Keywords: <span class="glyphicon glyphicon-question-sign text-info moreInfo" aria-hidden="true" data-toggle="tooltip" title="Search any text in a glossary record."></span>
-                              </label>
-                           
-                           <div class="col-sm-10 col-md-9 ">    
-                              <input type="text" id="qs" name="q" class="form-control keyboard" />
-                              
-                           </div>
-                           
+                           <label for="qs" style="color: white;">Keywords</label>
+                           <input type="text" id="qs" name="q" class="form-control keyboard" style="width: 100%; border: none; border-radius: 4px; margin-bottom: 10px;"/>
+                        </div>
+                        <div class="form-group">
+                           <label for="title" style="color: white;">Title</label>
+                           <input type="text" id="title" name="title" class="form-control keyboard" style="width: 100%; border: none; border-radius: 4px; margin-bottom: 10px;"/>
+                        </div>
+                        <div class="form-group">
+                           <label for="author" style="color: white;">Author/Editor</label>
+                           <input type="text" id="author" name="author" class="form-control keyboard" style="width: 100%; border: none; border-radius: 4px; margin-bottom: 10px;"/>
+                        </div>
+                        <div class="form-group">
+                           <label for="pub-place" style="color: white;">Publication Place</label>
+                           <input type="text" id="pub-place" name="pub-place" class="form-control keyboard" style="width: 100%; border: none; border-radius: 4px; margin-bottom: 10px;"/>
+                        </div>
+                        <div class="form-group">
+                           <label for="date" style="color: white;">Date</label>
+                           <input type="text" id="date" name="date" class="form-control keyboard" style="width: 100%; border: none; border-radius: 4px; margin-bottom: 10px;"/>
                         </div>
                         
-                        <div class="form-group">            
-                           <label for="title" class="col-sm-2 col-md-3  control-label">Title: </label>
-                           
-                           <div class="col-sm-10 col-md-9 ">
-                              <input type="text" id="title" name="title" class="form-control keyboard" placeholder="Title of article, journal, book, or series" />                 
-                              
-                           </div>
-                           
+                        <!-- Sort By Dropdown -->
+                        <div class="form-group">
+                           <label for="sort-by" style="color: white;">Sort by</label>
+                           <select id="sort-by" name="sort-by" class="form-control" style="width: 100%; border: none; border-radius: 4px; margin-bottom: 10px;">
+                              <option value="relevance">Relevance</option>
+                              <option value="title">Title</option>
+                              <option value="author">Author</option>
+                              <option value="pubDate">Publication Date</option>
+                              <option value="pubPlace">Publication Place</option>
+                           </select>
                         </div>
                         
-                        <div class="form-group">            
-                           <label for="author" class="col-sm-2 col-md-3  control-label">Author/Editor: </label>
-                           
-                           <div class="col-sm-10 col-md-9">
-                              <input type="text" id="author" name="author" class="form-control keyboard" placeholder="First Last or Last, First" />                
-                              
-                           </div>
-                           
-                        </div>  
-                        
-                        <div class="form-group">            
-                           <label for="pub-place" class="col-sm-2 col-md-3  control-label">Publication Place: </label>
-                           
-                           <div class="col-sm-10 col-md-9">
-                              <input type="text" id="pubPlace" name="pub-place" class="form-control keyboard" placeholder="First Last or Last, First" />
-                              
-                           </div>
-                           
-                        </div>
-                        
-                        <div class="form-group">            
-                           <label for="publisher" class="col-sm-2 col-md-3  control-label">Publisher: </label>
-                           
-                           <div class="col-sm-10 col-md-9">
-                              <input type="text" id="publisher" name="publisher" class="form-control keyboard" placeholder="Publisher Name" />
-                              
-                           </div>
-                           
-                        </div>   
-                        
-                        <div class="form-group">            
-                           <label for="date" class="col-sm-2 col-md-3  control-label">Date: </label>
-                           
-                           <div class="col-sm-10 col-md-9">
-                              <input type="text" id="date" name="date" class="form-control" placeholder="Year as YYYY" />
-                              
-                           </div>
-                           
-                        </div>   
-                        
-                        <hr />
-                        
-                        <div class="form-group">            
-                           <label for="idno" class="col-sm-2 col-md-3  control-label">Id Number: </label>
-                           
-                           <div class="col-sm-10 col-md-2 ">
-                              <input type="text" id="idno" name="idno" class="form-control" placeholder="Ex: 3490" />
-                              
-                           </div>
-                           
-                        </div> 
-                        <i id="searchSpinner" class="fa fa-spinner fa-spin fa-lg"></i>
-                        
-                        <div class="pull-right">
-                           <button type="submit" class="btn btn-success">Search</button> 
-                           <button type="reset" class="btn btn-info">Clear</button>
-                           
-                        </div>
-                        
+                        <button type="submit" class="btn btn-success btn-block" style="background-color: #4CAF50; border: none;">Search</button>
+                     </form>
+                  </div>
+                  
+                  <!-- Dynamic Categories with Improved Style -->
+                  <div id="category-list" style="color: white; margin-top: 5px;">
+                     <div data-template="app:display-facets" data-template-collection="bibl" data-template-facets="facet-def.xml" style="margin-top: 10px;">
+                        <!-- Styling for categories -->
+                        <style>
+                            #category-list h4 {
+                                color: white;
+                                font-weight: bold;
+                                margin-bottom: 15px;
+                            }
+
+                            #category-list a {
+                                color: rgba(255, 255, 255, 0.9);
+                                font-size: 15px;
+                                padding: 10px 15px;
+                                text-decoration: none;
+                                display: block;
+                                margin: 6px 0;
+                                background-color: rgba(255, 255, 255, 0.15);
+                                border-radius: 8px;
+                                transition: background-color 0.3s, color 0.3s;
+                                font-weight: 500;
+                            }
+
+                            #category-list a:hover {
+                                background-color: rgba(255, 255, 255, 0.3);
+                                color: #fff;
+                            }
+
+                            #category-list .category-item {
+                                margin-top: 10px;
+                            }
+                        </style>
                      </div>
-                     
-                  </div>        
-                  
-               </form>
-               <br />
-               
-               <div id="search-results-panel">
-                  
-                  <div data-template="app:pageination" data-template-search-string="yes" data-template-collection="bibl" data-template-sort-options="relevance,title,author,pubPlace,pubDate "></div>
-                  
-                  <div class="row">
-                     
-                     <!-- Commented out until Tracy asks for facets or slider
-                <div class="col-md-4">
-                    <div class="slider-container">
-                        <div id="slider" data-template="app:display-slider"/>
-                    </div>
-                    <div data-template="app:display-facets" data-template-collection="bibl" data-template-facets="facet-def.xml"/>
-                </div>
-                -->
-                     
-                     <div class="col-md-12">
-                        <br />
-                        
-                        <div data-template="search:show-hits" data-template-collection="bibl"></div>
-                        
-                        <div class="page-bottom">
-                           
-                           <div data-template="app:pageination" data-template-collection="bibl"></div>
-                           
-                        </div>
-                        
-                     </div>
-                     
                   </div>
                   
                </div>
-               
             </div>
-            
+            <div class="col-md-8" >
+               <div class="results" style="padding-top:75px;">
+                  <div id="search-results-panel" style="width: 100%;"> <!-- Extend results to full width -->
+                     <div id="search-results-panel" style="width: 100%;"> <!-- Extend results to full width -->
+                        <!-- Pagination Controls at the Top -->
+                        <div data-template="app:pageination" data-template-search-string="yes" data-template-collection="bibl" data-template-sort-options="relevance,title,author,pubPlace,pubDate">
+                        </div>
+                        
+                        <!-- Row for Search Results -->
+                        <div class="row">
+                           <div class="col-md-12">
+                              <!-- Display Search Hits -->
+                              <div data-template="search:show-hits" data-template-collection="bibl" style="width: 100%; padding-left: 10px; padding-right: 10px; line-height: 1.5em;">
+                                 <!-- Search results will be rendered here by the 'search:show-hits' template -->
+                              </div>
+                              
+                              <!-- Pagination Controls at the Bottom -->
+                              <div class="page-bottom">
+                                 <div data-template="app:pageination" data-template-collection="bibl"/>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
-         
       </div>
+      
+         <style>
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: #702020;
+            min-height: calc(100vh - 60px);
+            padding: 20px;
+            position: fixed;
+            width: 25%;
+            overflow-y: auto;
+            z-index: 1;
+        }
+
+        .bibliography-title {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.2;
+        }
+
+        /* Search Form Styles */
+        .search-container {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .search-container label {
+            color: white;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .search-container input.keyboard {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+        }
+
+        /* Dynamic Category Styles */
+        #category-list h4 {
+            color: white;
+        }
+
+        #category-list a {
+            color: rgba(255, 255, 255, 0.9);
+            padding: 8px 10px;
+            display: block;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            margin-bottom: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #category-list a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-left: 25%;
+            padding: 20px 30px;
+        }
+
+        /* Results Styles */
+        .record {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .badge {
+            background-color: #888;
+            margin-right: 10px;
+        }
+
+        .btn-success {
+            background-color: #4CAF50;
+            border: none;
+            padding: 10px;
+            font-weight: 500;
+        }
+
+        .btn-success:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                min-height: auto;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .bibliography-title {
+                font-size: 24px;
+            }
+        }
+
+        /* Pagination and Sort Controls */
+        .alpha-pages {
+            background: white;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .pagination {
+            margin: 0;
+        }
+
+        .dropdown-menu {
+            min-width: 100px;
+        }
+    </style>
+    
       <!-- Footer with Syriaca.org branding -->
       <footer>
          <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
