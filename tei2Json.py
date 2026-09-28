@@ -497,10 +497,13 @@ def tei_to_json(
     ]
 
     header_titles = []
+    # The collection/site-wide title appears in every record's titleStmt and
+    # should not be treated as a place title.
+    COLLECTION_TITLES = {"architectura sinica"}
     if title_stmt is not None:
         for title in title_stmt.findall("tei:title", NS):
             txt = text_content(title)
-            if txt:
+            if txt and clean_text(txt).lower() not in COLLECTION_TITLES:
                 header_titles.append(txt)
 
     title_traditional_candidates = []
@@ -560,12 +563,32 @@ def tei_to_json(
         else:
             date_labels.append(desc_text)
 
-    state_ranges = []
+    # Build the date range from the actual building "Date" states only.
+    # Existence states come in two kinds:
+    #   - actual building/site "Date" states (no subtype), e.g. 1718
+    #   - dynasty spans (subtype="dynasty"), e.g. Han 202 BCE - 220 CE
+    # The real construction date is the plain Date state. If we merged both, a
+    # Qing pavilion (1718) that also references a Han-era feature would inherit
+    # a spurious Han date range. So we prefer the plain Date states, and only
+    # fall back to the dynasty spans when a place has no plain Date state
+    # (common for sites described only by dynasty, e.g. "Northern Song - Ming").
+    date_ranges = []
+    dynasty_ranges = []
     for state in place.findall("tei:state[@type='existence']", NS):
         from_value = clean_text(state.get("from", ""))
         to_value = clean_text(state.get("to", ""))
-        if from_value or to_value:
-            state_ranges.append({"from": from_value, "to": to_value})
+        if not (from_value or to_value):
+            continue
+        entry = {"from": from_value, "to": to_value}
+        if clean_text(state.get("subtype", "")) == "dynasty":
+            dynasty_ranges.append(entry)
+        else:
+            date_ranges.append(entry)
+
+    # Keep the two kinds in separate fields; the frontend prefers dateRange
+    # (actual construction dates) and falls back to dynastyRange when a place
+    # has no plain Date state.
+    state_ranges = date_ranges
 
     # Location and geo
     nested_locations = [
@@ -597,6 +620,13 @@ def tei_to_json(
     relation_keywords = relation_keyword_labels(relations, keyword_lookup)
     relation_dynasties = relation_keyword_labels(relations, keyword_lookup, ana_filter="dynasty")
     relation_arch_features = relation_keyword_labels(relations, keyword_lookup, ana_filter="architectural-feature")
+    # Building type relations appear as ana="building-type" (and a stray
+    # "building type" with a space in a few records); collect both.
+    relation_building_types = unique_keep_order(
+        relation_keyword_labels(relations, keyword_lookup, ana_filter="building-type")
+        + relation_keyword_labels(relations, keyword_lookup, ana_filter="building type")
+    )
+    relation_site_types = relation_keyword_labels(relations, keyword_lookup, ana_filter="site-type")
 
     province_names = [
         text_content(el)
@@ -630,6 +660,8 @@ def tei_to_json(
         "placeName": unique_keep_order(place_names),
         "keyword": relation_keywords,
         "architecturalFeature": relation_arch_features,
+        "buildingType": relation_building_types,
+        "siteType": relation_site_types,
         "province": unique_keep_order(province_names),
         "alternateNames": unique_keep_order(alternate_names),
         "nestedLocation": unique_keep_order(nested_locations),
@@ -638,6 +670,7 @@ def tei_to_json(
         "dynasty": unique_keep_order(dynasties + relation_dynasties),
         "dateLabel": unique_keep_order(date_labels),
         "dateRange": state_ranges,
+        "dynastyRange": dynasty_ranges,
         "gps": gps_points,
         "relations": relations,
         "principal": principal,

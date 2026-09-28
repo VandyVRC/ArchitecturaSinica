@@ -2,11 +2,9 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       
-      <title data-template="config:app-title">App Title</title>
+      <title>Search | Architectura Sinica</title>
       
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      
-      <meta data-template="config:app-meta" />
       
       <link rel="shortcut icon" href="/resources/images/fav-icons/favicon.ico" />
       
@@ -51,11 +49,13 @@
       <!-- Bootstrap -->
       <script type="text/javascript" src="/resources/bootstrap/js/bootstrap.min.js"></script>
       
+      <!-- Leaflet -->
+      <script type="text/javascript" src="/resources/leaflet/leaflet.js"></script>
+      
       <!-- Date Slider -->
       <script src="/resources/dateSlider/js/jQDateRangeSlider-min.js"></script>
       <script defer="defer" data-domain="architecturasinica.org" src="https://plausible.io/js/script.js"></script>
       
-      <!--<script src="https://www.google.com/recaptcha/api.js" type="text/javascript" async="async" defer="defer"/>-->
       <script type="text/javascript">
             $(document).ready(function () {
                 $('[data-toggle="tooltip"]').tooltip({ container: 'body' })
@@ -65,141 +65,155 @@
    <body id="body">
       <script src="resources/js/navbar-search.js"></script>
       <div id="navbar-container"></div>
-      <div data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
-         
-         <div>
-            
-            <form method="get" action="search.html" id="research-tool" class="center-block form-horizontal indent" role="form" style="margin:0; padding:2em; background-color:#F7F7F9;">  
-               
-               <h1 class="search-header indent">Search Architectura Sinica 
-                   <small class="pull-right" style="margin-right:2em;">
-                     (<a class="togglelink text-info" data-toggle="collapse" data-target="#showSearch" href="#showSearch" data-text-swap="+ Show"> - Hide </a>)
-                     </small>
-                  
-               </h1>
-               
-               <div class="row collapse in" id="showSearch">
-                  
-                  <div class="col-md-7 col-sm-offset-1">
-                     
-                     <!-- Keyword -->
-                     
-                     <div class="form-group">
-                        <label for="q" class="col-sm-2 col-md-3  control-label">Keyword: 
-                           <span class="glyphicon glyphicon-question-sign text-info moreInfo" aria-hidden="true" data-toggle="tooltip" title="Search any text in a place record."></span>
-                           </label>
-                        
-                        <div class="col-sm-10 col-md-9 ">    
-                           <input type="text" id="qs" name="q" class="form-control keyboard" />
-                           
-                        </div>
-                        
+      <div class="padding-top" style="padding:0;">
+            <div>
+               <div>
+                  <div class="sidebar" style="background-color: #702020; height: 100vh; position: fixed; top:0; left:0; color: white; padding-top:75px;">
+                     <h1 class="terminology-title" style="color: white; font-size: 28px; margin-bottom: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Search</h1>
+                     <p style="color: rgba(255,255,255,0.85); font-size: 14px; margin-bottom: 20px;">Keyword searches all records. Place Name searches site and building titles only.</p>
+                     <!-- Search Form -->
+                     <div class="search-container" style="margin-bottom: 30px;">
+                        <form method="get" action="search.html" id="research-tool" role="form">
+                           <div class="form-group">
+                              <label for="qs" style="color: white;">Keywords</label>
+                              <input type="text" id="qs" name="q" class="form-control keyboard" style="width: 100%; border: none; border-radius: 4px; margin-bottom: 10px;"/>
+                           </div>
+                           <div class="form-group">
+                              <label for="placeName" style="color: white;">Place Name</label>
+                              <input type="text" id="placeName" name="placeName" class="form-control keyboard" style="width: 100%; border: none; border-radius: 4px; margin-bottom: 10px;"/>
+                           </div>
+                           <button type="submit" class="btn btn-success btn-block" style="background-color: #4CAF50; border: none;">Search</button>
+                           <button type="reset" class="btn btn-info btn-block" style="margin-top: 10px; border: none;">Clear</button>
+                        </form>
                      </div>
                      
-                     <!-- Place Name-->
-                     
-                     <div class="form-group">
-                        <label for="placeName" class="col-sm-2 col-md-3  control-label">Place Name: 
-                           <span class="glyphicon glyphicon-question-sign text-info moreInfo" aria-hidden="true" data-toggle="tooltip" title="Search only Site/Building names. Names may be searched in English, Pinyin or Chinese."></span>
-                           </label>
-                        
-                        <div class="col-sm-10 col-md-9 ">   
-                           <input type="text" id="placeName" name="placeName" class="form-control keyboard" />
-                           
-                        </div>
-                        
-                     </div>
-                     
-                     <div>
-                        
-                        <h2 class="search-header">Limit by Architectural Features 
-                           <span class="glyphicon glyphicon-question-sign text-info moreInfo" aria-hidden="true" data-toggle="tooltip" title="Limit results based on type or number of Architectural Features."></span>
-                            <small class="pull-right" style="margin-right:2em;">
-                              (<a class="togglelink text-info" data-toggle="collapse" data-target="#showArchSearch" href="#showArchSearch" data-text-swap=" - Hide"> + Show </a>)
-                              </small>
-                           
-                        </h2>
-                        
-                        <div id="showArchSearch" class="collapse">
-                           
-                           <p class="note small">For descriptions of all architectural features. browse the <a href="dictionary.html">dictionary</a>. 
-                           </p>
-                           
-                           <div data-template="search:architectural-features"></div>    
-                           
-                        </div>
-                        
-                     </div>
-                     <i id="searchSpinner" class="fa fa-spinner fa-spin fa-lg"></i>
-                     
-                     <div class="pull-right">
-                        <button type="submit" class="btn btn-success">Search</button> 
-                        <button type="reset" class="btn btn-info">Clear</button>
-                        
-                     </div>
+                     <!-- Facets: populated by search.js (places only) -->
+                     <div id="place-facets" style="color: white; margin-top: 5px;"></div>
                      
                   </div>
-                  
-               </div>        
-               
-            </form>
-            
-            <!-- <form data-template="search:search-form" data-template-collection="OPTIONAL: COLLECTION NAME"/>--> 
-            
-            <div data-template="search:search-data" id="search-results-panel">   
-               
-               <div class="container padding-top">
-                  <br />
-                  
-                  <div data-template="app:pageination" data-template-search-string="yes" data-template-sort-options="relevance,title"></div>
-                  
-                  <div class="row">
-                     
-                     <div class="col-md-4 facet-display">
-                        
-                        <div class="slider-container">
-                           
-                           <div id="slider" data-template="app:display-slider"></div>
-                           
-                        </div>
-                        
-                        <div data-template="app:display-facets" data-template-collection="places" data-template-facets="facet-def.xml"></div>
-                        
-                     </div>
-                     
-                     <div class="col-md-8">
-                        
-                        <div data-template="app:display-map"></div>
-                        
-                        <div data-template="search:show-hits"></div>
-                        
-                        <div class="page-bottom">
-                           
-                           <div data-template="app:pageination"></div>
-                           
-                        </div>
-                        
-                     </div>
-                     
-                  </div>
-                  <br />
-                  
                </div>
-               
+               <div>
+                  <div class="results" style="padding-top:75px;">
+                     <h1>Search results</h1>
+                     <!-- Timeline range filter: populated by search.js -->
+                     <div id="timeline-filter" style="margin-bottom:16px;"></div>
+                     <div id="place-map" style="width:100%; height:360px; margin-bottom:20px; border:1px solid #ddd; border-radius:6px;"></div>
+                     <i id="searchSpinner" class="fa fa-spinner fa-spin fa-lg"></i>
+                     <div id="search-results-panel" style="width: 100%;"><!-- Populated by search.js --></div>
+                  </div>
+               </div>
             </div>
-            
          </div>
          
-      </div>
-      <!-- Footer with Syriaca.org branding -->
-      <footer>
-         <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
-            <img alt="Creative Commons License" style="border-width:0" src="/resources/images/cc.png" height="18px" />
-            </a> 
-         This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" target="_blank">Creative Commons Attribution 3.0 Unported License</a>.
-         <br />Copyright Vanderbilt University and the Contributor(s), 2014.  
-         
-      </footer>
+      <style>
+        /* Facet panel: force readable colors over Bootstrap / global rules. */
+        #place-facets,
+        #place-facets .facet-grp,
+        #place-facets .facet-list {
+            background-color: transparent !important;
+            color: #fff !important;
+        }
+        /* Stack facet groups vertically (Province directly under Dynasty). */
+        #place-facets .facet-grp {
+            display: block !important;
+            float: none !important;
+            width: 100% !important;
+            clear: both !important;
+        }
+        #place-facets .facet-link {
+            background-color: transparent !important;
+            color: rgba(255,255,255,0.9) !important;
+            border: none !important;
+        }
+        #place-facets .facet-link:hover,
+        #place-facets .facet-link:focus {
+            background-color: rgba(255,255,255,0.15) !important;
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+        #place-facets .facet-link.active {
+            background-color: #4a1414 !important;
+            color: #fff !important;
+            font-weight: 600;
+        }
+        #place-facets .facet-title { color: #fff !important; border-bottom-color: rgba(255,255,255,0.4) !important; }
+
+        /* Timeline range filter */
+        .tl-header { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
+        .tl-header .tl-label { font-weight:600; color:#333; font-size:14px; }
+        .tl-header .tl-readout { color:#702020; font-size:14px; font-weight:600; }
+        .tl-header .tl-reset { font-size:12px; color:#888; cursor:pointer; background:none; border:none; padding:0 0 0 10px; }
+        .tl-header .tl-reset:hover { color:#702020; text-decoration:underline; }
+        .tl-track {
+            position:relative; height:6px; background:#e2e2e2; border-radius:3px;
+            margin:14px 8px 22px 8px; cursor:pointer;
+        }
+        .tl-range { position:absolute; top:0; height:6px; background:#702020; border-radius:3px; }
+        .tl-handle {
+            position:absolute; top:50%; width:16px; height:16px; margin-left:-8px;
+            background:#702020; border:2px solid #fff; border-radius:50%;
+            transform:translateY(-50%); cursor:grab; box-shadow:0 1px 3px rgba(0,0,0,0.3);
+            touch-action:none;
+        }
+        .tl-handle:active { cursor:grabbing; }
+        .tl-handle:focus { outline:2px solid #4a1414; outline-offset:2px; }
+        .tl-tick { position:absolute; top:10px; font-size:11px; color:#999; transform:translateX(-50%); }
+
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: #702020;
+            min-height: calc(100vh - 60px);
+            padding: 20px;
+            position: fixed;
+            width: 25%;
+            overflow-y: auto;
+            z-index: 1;
+        }
+
+        /* Right panel: offset by the fixed 25% sidebar. */
+        .results {
+            margin-left: 25%;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        @media (max-width: 768px) {
+            .results { margin-left: 0; }
+        }
+        
+        .terminology-title {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.2;
+        }
+      
+        /* Search Form Styles */
+        .search-container {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .search-container label { color: white; margin-bottom: 5px; display: block; }
+        .search-container input.keyboard {
+            padding: 8px; margin-bottom: 10px; width: 100%; border: none; border-radius: 4px;
+        }
+
+        .badge { background-color: #888; margin-right: 10px; }
+        .btn-success { background-color: #4CAF50; border: none; padding: 10px; font-weight: 500; }
+        .btn-success:hover { background-color: #45a049; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar { position: relative; width: 100%; min-height: auto; }
+            .terminology-title { font-size: 24px; }
+        }
+    </style>
+      
+      <script type="text/javascript" src="/resources/js/search.js"></script>
    </body>
-   <script type="text/javascript" src="/resources/js/search.js"></script>
-   <script type="text/javascript" src="/resources/js/jquery.validate.min.js"></script><script type="text/javascript" src="/resources/js/srophe.js"></script><script data-template="app:google-analytics"></script></html>
+   <script type="text/javascript" src="/resources/js/jquery.validate.min.js"></script>
+   </html>
