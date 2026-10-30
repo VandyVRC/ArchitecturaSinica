@@ -75,12 +75,25 @@
                 <!-- Search Bar -->
                 <div class="search-container">
                     <div class="input-group">
-                        <input type="text" class="form-control search-input" placeholder="Search..." name="q"/>
-                        <button type="submit" class="search-button">
-                            <span class="glyphicon glyphicon-search"/>
+                        <input type="text" id="homeSearchInput" class="form-control search-input" placeholder="Search..." name="q"/>
+                        <button type="button" id="homeSearchBtn" class="search-button" aria-label="Search">
+                            <span class="glyphicon glyphicon-search"></span>
                         </button>
                     </div>
                 </div>
+                <script type="text/javascript">
+                    (function () {
+                        function runHomeSearch() {
+                            var kw = document.getElementById('homeSearchInput').value.trim();
+                            if (!kw) return;
+                            window.location.href = '/search.html?fullText=' + encodeURIComponent(kw);
+                        }
+                        document.getElementById('homeSearchBtn').addEventListener('click', runHomeSearch);
+                        document.getElementById('homeSearchInput').addEventListener('keydown', function (e) {
+                            if (e.key === 'Enter') { e.preventDefault(); runHomeSearch(); }
+                        });
+                    })();
+                </script>
             </div>
 
 
