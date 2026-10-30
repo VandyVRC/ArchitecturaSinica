@@ -900,7 +900,7 @@ function renderSection(key, label, count, bodyHtml) {
 const urlQuery = (() => {
   const params = new URLSearchParams(window.location.search);
   return {
-    keyword: params.get('fullText') || params.get('q') || '',
+    keyword: params.get('fullText') || params.get('q') || params.get('keyword') || '',
     placeName: params.get('placeName') || ''
   };
 })();

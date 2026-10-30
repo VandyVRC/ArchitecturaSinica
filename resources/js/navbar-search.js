@@ -2,9 +2,40 @@
 $(document).ready(function() {
 $('#navbar-container').load('/resources/components/navbar.html', function() {
     
-    $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
+    function runNavSearch() {
+        const keyword = $.trim($('#keywordNav').val());
+        if (!keyword) return;
+        const qs = document.getElementById('qs');
+        if (qs && /\/search\.html$/.test(window.location.pathname)) {
+            // Already on the search page: update the field and search without reloading.
+            qs.value = keyword;
+            history.replaceState(null, '', '/search.html?fullText=' + encodeURIComponent(keyword));
+            qs.dispatchEvent(new Event('input', { bubbles: true }));
+        } else {
+            window.location.href = '/search.html?fullText=' + encodeURIComponent(keyword);
+        }
+    }
 
-    $('.keyboard').keyboard({
+    // Bind first so a failure in the optional plugins below cannot leave the
+    // form to submit natively (which sends ?keyword=, not ?fullText=).
+    $('#searchbtn').on('click', function(e) {
+        e.preventDefault();
+        runNavSearch();
+    });
+    $('#keywordNav').on('keypress', function(e) {
+        if (e.which === 13) {
+            e.preventDefault();
+            runNavSearch();
+        }
+    });
+    $('#navbar-container form.search-box').on('submit', function(e) {
+        e.preventDefault();
+        runNavSearch();
+    });
+
+    if ($.fn.tooltip) $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
+
+    if ($.fn.keyboard) $('.keyboard').keyboard({
         openOn: null,
         stayOpen: false,
         alwaysOpen: false,
@@ -29,27 +60,9 @@ $('#navbar-container').load('/resources/components/navbar.html', function() {
         }
     });
     
-    $('.dropdown-toggle').dropdown();
+    if ($.fn.dropdown) $('.dropdown-toggle').dropdown();
     
     //$('#navbar-container').html(data);
-    
-    $('#searchbtn').on('click', function(e) {
-        e.preventDefault();
-        const keyword = $('#keywordNav').val();
-        if (keyword) {
-            window.location.href = '/search.html?fullText=' + encodeURIComponent(keyword);
-        }
-    });
-    
-    $('#keywordNav').on('keypress', function(e) {
-        if (e.which === 13) {
-            e.preventDefault();
-            const keyword = $(this).val();
-            if (keyword) {
-                window.location.href = '/search.html?fullText=' + encodeURIComponent(keyword);
-            }
-        }
-    }); 
     
      $('.swap-font').on('click', function () {
         var selectedFont = $(this).data("font-id");

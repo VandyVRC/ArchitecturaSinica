@@ -1,6 +1,8 @@
 # ArchitecturaSinica
 New application repository. Based off of the Gaddel app architecture. 
 
+To preview the site on your machine, see [RUNNING_LOCALLY.md](RUNNING_LOCALLY.md).
+
 ## Data Extraction
 
 Generate the place search JSON, terminology search JSON, and bibliography search JSON with:
