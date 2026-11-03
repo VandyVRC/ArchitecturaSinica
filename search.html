@@ -72,7 +72,7 @@
                      <h1 class="terminology-title" style="color: white; font-size: 28px; margin-bottom: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Search</h1>
                      <p style="color: rgba(255,255,255,0.85); font-size: 14px; margin-bottom: 20px;">Keyword searches all records. Place Name searches site and building titles only.</p>
                      <!-- Mobile-only toggle for the filter menu (hidden on desktop via CSS). -->
-                     <button type="button" id="filters-toggle" class="btn btn-block" aria-expanded="true" aria-controls="filters-collapsible" style="display:none;">Show filters</button>
+                     <button type="button" id="filters-toggle" class="btn btn-block" aria-expanded="true" aria-controls="filters-collapsible">Show filters</button>
                      <!-- Collapsible block: search form + facets. -->
                      <div id="filters-collapsible">
                      <!-- Search Form -->
@@ -221,8 +221,10 @@
         .btn-success { background-color: #4CAF50; border: none; padding: 10px; font-weight: 500; }
         .btn-success:hover { background-color: #45a049; }
 
-        /* Filter-menu toggle button (mobile only). */
+        /* Filter-menu toggle button: hidden by default; shown only on mobile
+           when results exist (see the max-width:768px rule below). */
         #filters-toggle {
+            display: none;
             background-color: rgba(255,255,255,0.2);
             color: #fff;
             border: 1px solid rgba(255,255,255,0.5);

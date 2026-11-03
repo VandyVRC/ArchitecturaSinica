@@ -767,6 +767,44 @@ function renderGroup(group, index) {
     </li>`;
 }
 
+/* -------------------------------------------------------------------------- */
+/* Mobile filter-menu collapse                                                */
+/* -------------------------------------------------------------------------- */
+
+// On mobile, collapse the filter menu by default once results exist so the
+// results are visible near the top. Once the user taps the toggle, respect
+// their choice for the rest of the session. CSS (max-width:768px) does the
+// actual hide/show; desktop is unaffected.
+let filtersCollapsed = true;      // default collapsed when results are present
+let filtersUserOverride = false;  // true once the user taps the toggle
+
+function updateFiltersToggleLabel() {
+  const btn = document.getElementById('filters-toggle');
+  if (!btn) return;
+  btn.textContent = filtersCollapsed ? 'Show filters' : 'Hide filters';
+  btn.setAttribute('aria-expanded', filtersCollapsed ? 'false' : 'true');
+}
+
+function syncFiltersMenu(hasResults) {
+  document.body.classList.toggle('has-results', hasResults);
+  // When there are no results, never collapse (menu stays fully visible).
+  const collapsed = hasResults && filtersCollapsed;
+  document.body.classList.toggle('filters-collapsed', collapsed);
+  updateFiltersToggleLabel();
+}
+
+function wireFiltersToggle() {
+  const btn = document.getElementById('filters-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    filtersCollapsed = !filtersCollapsed;
+    filtersUserOverride = true;
+    document.body.classList.toggle('filters-collapsed',
+      document.body.classList.contains('has-results') && filtersCollapsed);
+    updateFiltersToggleLabel();
+  });
+}
+
 function render() {
   const panel = document.getElementById('search-results-panel');
   if (!panel) return;
@@ -783,6 +821,11 @@ function render() {
 
   const totalSites = filtered.length;
   const totalPlaces = filtered.reduce((n, g) => n + g.children.length, 0);
+
+  // Mobile: collapse the filter menu when results exist (unless the user has
+  // overridden the state this session); keep it expanded when empty.
+  if (!filtersUserOverride) filtersCollapsed = totalSites > 0;
+  syncFiltersMenu(totalSites > 0);
 
   let html = `
     <div style="margin:1em 0; padding:1em; background:#f9f9f9; border-left:4px solid #702020;">
@@ -1048,6 +1091,7 @@ function bindForm() {
 
 document.addEventListener('DOMContentLoaded', function () {
   bindForm();
+  wireFiltersToggle();
   initMap();
 
   // Terminology data is optional: it only supplies pinyin labels for the
