@@ -71,6 +71,10 @@
                   <div class="sidebar" style="background-color: #702020; height: 100vh; position: fixed; top:0; left:0; color: white; padding-top:75px;">
                      <h1 class="terminology-title" style="color: white; font-size: 28px; margin-bottom: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Search</h1>
                      <p style="color: rgba(255,255,255,0.85); font-size: 14px; margin-bottom: 20px;">Keyword searches all records. Place Name searches site and building titles only.</p>
+                     <!-- Mobile-only toggle for the filter menu (hidden on desktop via CSS). -->
+                     <button type="button" id="filters-toggle" class="btn btn-block" aria-expanded="true" aria-controls="filters-collapsible" style="display:none;">Show filters</button>
+                     <!-- Collapsible block: search form + facets. -->
+                     <div id="filters-collapsible">
                      <!-- Search Form -->
                      <div class="search-container" style="margin-bottom: 30px;">
                         <form method="get" action="search.html" id="research-tool" role="form">
@@ -89,6 +93,7 @@
                      
                      <!-- Facets: populated by search.js (places only) -->
                      <div id="place-facets" style="color: white; margin-top: 5px;"></div>
+                     </div>
                      
                   </div>
                </div>
@@ -177,7 +182,17 @@
             padding-right: 25px;
         }
         @media (max-width: 768px) {
-            .results { margin-left: 0; }
+            .results {
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            /* On mobile, show the search results above the map. */
+            .results h1 { order: 1; }
+            .results #timeline-filter { order: 2; }
+            .results #searchSpinner { order: 3; }
+            .results #search-results-panel { order: 4; }
+            .results #place-map { order: 5; }
         }
         
         .terminology-title {
@@ -206,10 +221,32 @@
         .btn-success { background-color: #4CAF50; border: none; padding: 10px; font-weight: 500; }
         .btn-success:hover { background-color: #45a049; }
 
+        /* Filter-menu toggle button (mobile only). */
+        #filters-toggle {
+            background-color: rgba(255,255,255,0.2);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.5);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        #filters-toggle:hover,
+        #filters-toggle:focus { background-color: rgba(255,255,255,0.35); color: #fff; }
+
         /* Responsive Design */
         @media (max-width: 768px) {
-            .sidebar { position: relative; width: 100%; min-height: auto; }
+            /* Override the inline position:fixed/height:100vh so the sidebar
+               flows normally and the results below it become visible. */
+            .sidebar {
+                position: static !important;
+                width: 100% !important;
+                height: auto !important;
+                min-height: 0 !important;
+            }
             .terminology-title { font-size: 24px; }
+            /* Show the toggle button only when there are results to reveal. */
+            body.has-results #filters-toggle { display: block; }
+            /* Collapse the search form + facets when requested. */
+            body.has-results.filters-collapsed #filters-collapsible { display: none; }
         }
     </style>
       
